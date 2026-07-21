@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#64EEEB",
+                        secondary: "#DDE6F2",
+                        accent: "#38BDF8",
+
+                        gradientStart: "#5B5FEF",
+                        gradientEnd: "#10B981",
+
+                        background: "#F8FAFC",
+                        paragraph: "#64748B",
+
+                        btnPrimary: "#2563EB",
+                        btnHover: "#48EBFA",
+
+                        heading: "#0F172A",
+                        cardBg: "#3D293B"
+                    },
+
+                    fontFamily: {
+                        bebas: ['"Bebas Neue"', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        oswald: ['Oswald', 'sans-serif'],
+                        roboto:['roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#081F2F]">
+
+    <div class="w-full  mx-auto">
+        <div class="header flex items-center bg-[#041E34] justify-between w-full px-3">
+            <div class="logo ">
+                <a href=""><img class="w-30 h-30" src="images/Logo.png"></a>
+            </div>
+            <!-- navbar -->
+             <div class="navmenu hidden lg:flex">
+                <ul class="flex gap-5">
+                    <li><a class="text-primary text-sm font-medium font-roboto px-4 py-5 " href="">
+                          Live Score
+                    </a></li>
+                    <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
+                          Team
+                    </a></li>
+                    <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
+                          News
+                    </a></li>
+                    <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
+                          Series
+                    </a></li>
+                    <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
+                          Gallary
+                    </a></li>
+                </ul>
+             </div>
+
+             <!-- icon & button -->
+              <div class="icons flex gap-5">
+                <div class="fantasy flex gap-2 items-center hidden lg:flex ">
+                    <i class="fa-solid fa-trophy text-primary"></i>
+                    <span class="text-secondary font-medium font-roboto">Fantasy</span>
+                </div>
+                 <div class="notification flex gap-2 items-center hidden lg:flex">
+                    <i class="fa-solid fa-bell text-primary"></i>
+                    <span class="text-secondary font-medium font-roboto">Notification</span>
+                </div>
+                <button class="px-3 py-1 rounded-md bg-gradient-to-b from-[#00BFFF] to-[#28385D] text-sm font-medium font-roboto text-white">Premium</button>
+                <!-- toggle-mobile -->
+               <div class="toggle flex items-center flex lg:hidden">
+                <i class="fa-solid fa-bars text-primary text-2xl"></i>
+               </div>
+        </div>
+              </div> 
+    </div>
+
+<!-- hero section -->
+
+<div class="w-full  mx-auto">
+    <div class="hero-image  w-full h-160">
+        <div class="image w-full block relative group">
+                <img class="w-full" src="images/Hero-Image.jpg">
+                <div class="overlay absolute inset-0 bg-black/30"></div>
+
+                <!-- scorecard -->
+                 <div class="container mx-auto px-3">
+                <div class="score-card-live group absolute bottom-[50px] left-[50px]">
+                    <div class="badge bg-red-600 rounded-full">
+                        <span class=" text-white italic font-oswald font-medium uppercase  flex items-center gap-[4px]"> <i class="fa-solid fa-circle text-[12px] text-white"></i>Live</span>
+                      </div>
+                      
+
+                      <!-- score-board -->
+                       
+                       <div class="score-board p-8 bg-[#0B1C2C] mt-5 rounded-2xl border border-white/20 ">
+                         <h6 class="text-white text-xl uppercase font-roboto font-medium mb-1">india vs australia</h6>
+                         <p class="text-secondary text-md font-inter mb-1 relative after:content-[''] 
+after:absolute 
+after:left-0 
+after:-bottom-3 
+after:w-[250px] 
+after:h-[1px] 
+after:bg-white/20">1st Test at Adelaide | Day 1</p>
+                         
+                         <h4 class="text-4xl text-white font-bold mt-5 mb-2">IND 182/3 (71.3 Ov)</h4>
+                         <div class="players flex gap-3">
+                         <p class="text-secondary text-md font-inter mb-1">R Ashwin 64 (84)</p>
+                         <p class="text-secondary text-md font-inter mb-1">K Natarajan 0-23 (7)</p>
+                         </div>
+                         <p class="text-secondary text-lg font-inter mb-4" >Australia still to bat</p>
+                          <button class="px-4 py-2 text-white bg-[#428BC1] flex gap-3 rounded-lg items-center">View Scroeboard<i class="fa-solid fa-arrow-right"></i></button>
+                           
+
+                       </div>
+
+</div>
+        
+                </div>
+        </div>
+
+    </div>
+
+
+</div>
+    
+</body>
+</html>
