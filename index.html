@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -38,13 +41,14 @@
                         bebas: ['"Bebas Neue"', 'sans-serif'],
                         inter: ['Inter', 'sans-serif'],
                         oswald: ['Oswald', 'sans-serif'],
-                        roboto:['roboto', 'sans-serif']
+                        roboto: ['roboto', 'sans-serif']
                     }
                 }
             }
         }
     </script>
 </head>
+
 <body class="bg-[#081F2F]">
 
     <div class="w-full  mx-auto">
@@ -53,93 +57,204 @@
                 <a href=""><img class="w-30 h-30" src="images/Logo.png"></a>
             </div>
             <!-- navbar -->
-             <div class="navmenu hidden lg:flex">
+            <div class="navmenu hidden lg:flex">
                 <ul class="flex gap-5">
                     <li><a class="text-primary text-sm font-medium font-roboto px-4 py-5 " href="">
-                          Live Score
-                    </a></li>
+                            Live Score
+                        </a></li>
                     <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
-                          Team
-                    </a></li>
+                            Team
+                        </a></li>
                     <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
-                          News
-                    </a></li>
+                            News
+                        </a></li>
                     <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
-                          Series
-                    </a></li>
+                            Series
+                        </a></li>
                     <li><a class="text-secondary text-sm font-medium font-roboto px-4 py-5" href="">
-                          Gallary
-                    </a></li>
+                            Gallary
+                        </a></li>
                 </ul>
-             </div>
+            </div>
 
-             <!-- icon & button -->
-              <div class="icons flex gap-5">
+            <!-- icon & button -->
+            <div class="icons flex gap-5">
                 <div class="fantasy flex gap-2 items-center hidden lg:flex ">
                     <i class="fa-solid fa-trophy text-primary"></i>
                     <span class="text-secondary font-medium font-roboto">Fantasy</span>
                 </div>
-                 <div class="notification flex gap-2 items-center hidden lg:flex">
+                <div class="notification flex gap-2 items-center hidden lg:flex">
                     <i class="fa-solid fa-bell text-primary"></i>
                     <span class="text-secondary font-medium font-roboto">Notification</span>
                 </div>
-                <button class="px-3 py-1 rounded-md bg-gradient-to-b from-[#00BFFF] to-[#28385D] text-sm font-medium font-roboto text-white">Premium</button>
+                <button
+                    class="px-3 py-1 rounded-md bg-gradient-to-b from-[#00BFFF] to-[#28385D] text-sm font-medium font-roboto text-white">Premium</button>
                 <!-- toggle-mobile -->
-               <div class="toggle flex items-center flex lg:hidden">
-                <i class="fa-solid fa-bars text-primary text-2xl"></i>
-               </div>
+                <div class="toggle flex items-center flex lg:hidden">
+                    <i class="fa-solid fa-bars text-primary text-2xl"></i>
+                </div>
+            </div>
         </div>
-              </div> 
     </div>
 
-<!-- hero section -->
+    <!-- hero section -->
 
-<div class="w-full  mx-auto">
-    <div class="hero-image  w-full h-160">
-        <div class="image w-full block relative group">
+    <div class="w-full  mx-auto">
+        <div class="hero-image  w-full h-160">
+            <div class="image w-full block relative group">
                 <img class="w-full" src="images/Hero-Image.jpg">
                 <div class="overlay absolute inset-0 bg-black/30"></div>
 
                 <!-- scorecard -->
-                 <div class="container mx-auto px-3">
-                <div class="score-card-live group absolute bottom-[50px] left-[50px]">
-                    <div class="badge bg-red-600 rounded-full">
-                        <span class=" text-white italic font-oswald font-medium uppercase  flex items-center gap-[4px]"> <i class="fa-solid fa-circle text-[12px] text-white"></i>Live</span>
-                      </div>
-                      
+                <div class="container mx-auto px-3">
+                    <div class="score-card-live group absolute bottom-[20px] left-[20px]">
+                        <div
+                            class=" bg-red-600 rounded-full inline-flex px-3 py-1 shadow-[0px_2px_4px_rgba(255,255,255,0.25)]">
 
-                      <!-- score-board -->
-                       
-                       <div class="score-board p-8 bg-[#0B1C2C] mt-5 rounded-2xl border border-white/20 ">
-                         <h6 class="text-white text-xl uppercase font-roboto font-medium mb-1">india vs australia</h6>
-                         <p class="text-secondary text-md font-inter mb-1 relative after:content-[''] 
+                            <span
+                                class=" text-white italic font-oswald font-medium uppercase flex items-center gap-1 text-[12px]"><i
+                                    class="fa-solid fa-circle text-[8px] text-white shadow-[0px_4px_4px_rgba(255,255,255,0.25)]"></i>Live</span>
+                        </div>
+
+
+                        <!-- score-board -->
+
+                        <div class="score-board p-4 bg-[#0B1C2C]/80 mt-3 rounded-2xl border border-white/20 backdrop-blur-xl">
+                            <h6 class="text-white text-md uppercase font-roboto font-medium mb-1">india vs australia
+                            </h6>
+                            <p class="text-secondary text-sm font-inter mb-1 relative after:content-[''] 
 after:absolute 
 after:left-0 
 after:-bottom-3 
 after:w-[250px] 
 after:h-[1px] 
 after:bg-white/20">1st Test at Adelaide | Day 1</p>
-                         
-                         <h4 class="text-4xl text-white font-bold mt-5 mb-2">IND 182/3 (71.3 Ov)</h4>
-                         <div class="players flex gap-3">
-                         <p class="text-secondary text-md font-inter mb-1">R Ashwin 64 (84)</p>
-                         <p class="text-secondary text-md font-inter mb-1">K Natarajan 0-23 (7)</p>
-                         </div>
-                         <p class="text-secondary text-lg font-inter mb-4" >Australia still to bat</p>
-                          <button class="px-4 py-2 text-white bg-[#428BC1] flex gap-3 rounded-lg items-center">View Scroeboard<i class="fa-solid fa-arrow-right"></i></button>
-                           
 
-                       </div>
-
-</div>
-        
+                            <h4 class="text-2xl text-white font-bold mt-5 mb-2">IND 182/3 (71.3 Ov)</h4>
+                            <div class="players flex gap-3">
+                                <p class="text-secondary text-sm font-inter mb-1">R Ashwin 64 (84)</p>
+                                <p class="text-secondary text-sm font-inter mb-1">K Natarajan 0-23 (7)</p>
+                            </div>
+                            <p class="text-secondary text-sm font-inter mb-4">Australia still to bat</p>
+                            <button
+                                class="px-4 py-2 text-white bg-[#428BC1] flex gap-3 rounded-lg items-center text-sm font-medium">View
+                                Scroeboard<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
+            </div>
         </div>
+    </div>
 
+    <!-- hot series -->
+     <div class="w-full bg-white/10 py-5 mt-10 backdrop-blur-xl">
+        <div class="container mx-auto px-3 flex justify-between items-center">
+            <div class="hot class bg-sky-800 inline rounded-lg px-3 py-2">
+                <span class="text-white font-medium font-roboto"> <i class="fa-solid fa-fire"></i>Hot Series</span>
+            </div>
+            <div class="series flex items-center px-3 py-3 bg-sky-500/20 rounded-lg">
+                <ul class="flex items-center gap-10">
+                    <li><a class="text-white px-3 py-1.5 bg-blue-500 rounded-2xl font-medium block" href="#">IPL 2026</a></li>
+                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">Aus W vs Wi W</a></li>
+                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">IND vs ENG</a></li>
+                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">Big Bash Leauge</a></li>
+                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">SA W vs NZ W</a></li>
+                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">SA20</a></li>
+                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">BAN vs ZIM</a></li>
+                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">Hundred</a></li>
+                </ul>
+            </div>
+        </div>
+     </div>
+
+     <!-- live matches -->
+
+    <div class="container mx-auto p-3">
+        <div class="grid grid-cols-2">
+            <div class="live-matches px-3 ">
+                <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.2)] border border-primary/20" >
+                <div class="match-1 p-4 flex justify-between ">
+                    <div class="box-1 ">
+                        <h6 class="text-white font-roboto text-lg mb-2">IND vs WI</h6>
+                        <span
+                                class=" text-white italic font-oswald font-medium uppercase flex items-center gap-1 text-sm"><i
+                            class="fa-solid fa-circle text-[8px] text-red-600"></i>Live</span>
+                        </div>
+                            <div class="box-2 flex items-start">
+                        <P class="text-secondary font-inter">1st Test</P>                     
+                      </div>
+                        <div class="box-3">
+                              <div class="score flex gap-2 items-center">
+                            <div class="flag size-10 rounded-full overflow-hidden">
+                                <img class="w-full h-full" src="images/flag-india.png">
+                            </div>
+                            <p class="text-white font-medium text-inter text-lg">IND</p>
+                            <p class="text-white  text-inter text-lg ml-2">213/4</p>
+                        </div>
+                        <p class="text-inter text-white text-lg text-end">over (82.0)</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary text-white text-md text-center pb-3"><span class="font-semibold">IND</span> Lead by 20 Runs - Day 3</p>
+                </div>
+                <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.2)] border border-primary/20 mt-5">
+                <div class="match-1 p-4 flex justify-between ">
+                    <div class="box-1 ">
+                        <h6 class="text-white font-roboto text-lg mb-2">SAW vs NZW</h6>
+                        <span
+                                class=" text-white italic font-oswald font-medium uppercase flex items-center gap-1 text-sm"><i
+                            class="fa-solid fa-circle text-[8px] text-red-600"></i>Live</span>
+                        </div>
+                            <div class="box-2 ">
+                        <P class="text-secondary font-inter">2nd</P>
+                        <P class="text-secondary font-inter">T20</P>                     
+                      </div>
+                        <div class="box-3">
+                              <div class="score flex gap-2 items-center">
+                            <div class="flag size-10 rounded-full overflow-hidden">
+                                <img class="w-full h-full" src="images/flag-south-africa.png">
+                            </div>
+                            <p class="text-white font-medium text-inter text-lg">SAW</p>
+                            <p class="text-white  text-inter text-lg ml-2">67/1</p>
+                        </div>
+                        <p class="text-inter text-white text-lg text-end">over (8.0)</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary text-white text-md text-center pb-3"><span class="font-semibold">SAW</span> need 57 runs in  72 balls</p>
+                </div>
+                 <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.2)] border border-primary/20 mt-5">
+                <div class="match-1 p-4 flex justify-between ">
+                    <div class="box-1 ">
+                        <h6 class="text-white font-roboto text-lg mb-2">SRH vs CSK</h6>
+                        <span
+                                class=" text-white italic font-oswald font-medium uppercase flex items-center gap-1 text-sm"><i
+                            class="fa-solid fa-circle text-[8px] text-red-600"></i>Live</span>
+                        </div>
+                            <div class="box-2 flex items-start">
+                        <P class="text-secondary font-inter">IPL 2026</P>                     
+                      </div>
+                        <div class="box-3">
+                              <div class="score flex gap-2 items-center">
+                            <div class="flag size-10 rounded-full overflow-hidden">
+                                <img class="w-full h-full" src="images/CSK logo.png">
+                            </div>
+                            <p class="text-white font-medium text-inter text-lg">CSK</p>
+                            <p class="text-white  text-inter text-lg ml-2">158/7</p>
+                        </div>
+                        <p class="text-inter text-white text-lg text-end">over (17.0)</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary text-white text-md text-center pb-3"><span class="font-semibold"></span> First Inning is in progress</p>
+                </div>
+                
+
+
+            </div>
+        </div>
     </div>
 
 
-</div>
-    
+
+
 </body>
+
 </html>
