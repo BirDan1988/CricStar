@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-
+ <script src="https://code.iconify.design/iconify-icon/3.1.1/iconify-icon.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -168,10 +168,10 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
 
      <!-- live matches -->
 
-    <div class="container mx-auto p-3 mt-[80px]">
-        <div class="grid grid-cols-2">
-            <div class="live-matches px-3 ">
-                <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.3)] border border-primary/20" >
+    <div class="container mx-auto px-3 py-5 mt-[80px] rounded-xl overflow-hidden border border-primary/40  shadow-[0px_1px_5px_rgba(72,235,250,0.8)]">
+        <div class="grid grid-cols-2 items-center py-">
+            <div class="live-matches px-5 border-r border-white/30 ">
+                <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.3)] border border-primary/40" >
                 <div class="match-1 p-4 flex justify-between ">
                     <div class="box-1 ">
                         <h6 class="text-white font-roboto text-2xl mb-2">IND vs WI</h6>
@@ -193,9 +193,9 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
                         <p class="text-inter text-white text-lg text-end font-regular">over (82.0)</p>
                         </div>
                     </div>
-                    <p class="text-secondary text-white text-md text-center pb-3"><span class="font-semibold">IND</span> Lead by 20 Runs - Day 3</p>
+                    <p class="text-[#B8C5D6] text-md text-center pb-3"><span class="font-semibold">IND</span> Lead by 20 Runs - Day 3</p>
                 </div>
-                <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.2)] border border-primary/10 mt-5">
+                <div class="card bg-[#0F334A]  rounded-xl shadow-lg mt-9">
                 <div class="match-1 p-4 flex justify-between ">
                     <div class="box-1 ">
                         <h6 class="text-white font-roboto text-2xl mb-2">SAW vs NZW</h6>
@@ -218,9 +218,9 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
                         <p class="text-inter text-white text-lg text-end">over (8.0)</p>
                         </div>
                     </div>
-                    <p class="text-secondary text-white text-md text-center pb-3"><span class="font-semibold">SAW</span> need 57 runs in  72 balls</p>
+                    <p class="text-[#B8C5D6]  text-md text-center pb-3"><span class="font-semibold">SAW</span> need 57 runs in  72 balls</p>
                 </div>
-                 <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.2)] border border-primary/10 mt-5">
+                 <div class="card bg-[#0F334A]  rounded-xl shadow-lg mt-9">
                 <div class="match-1 p-4 flex justify-between ">
                     <div class="box-1 ">
                         <h6 class="text-white font-roboto text-2xl mb-2">SRH vs CSK</h6>
@@ -242,19 +242,73 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
                         <p class="text-inter text-white text-lg text-end">over (17.0)</p>
                         </div>
                     </div>
-                    <p class="text-secondary text-white text-md text-center pb-3"><span class="font-semibold"></span> First Inning is in progress</p>
+                    <p class="text-[#B8C5D6] text-md text-center pb-3"><span class="font-semibold"></span> First Inning is in progress</p>
                 </div>
                 
 
 
             </div>
 
-            <div class="upcoming-matches px-3">
+            <div class="upcoming-matches px-5">
                 <div class="upcoming-tag flex items-center">
                     <i class="fa-solid fa-angles-down text-2xl font-bold text-teal-600 mr-4"></i>
                     <span class="text-lg bg-[#2175C4] px-4 py-2 text-white font-medium font-roboto rounded-lg relative after:absolute after:[''] after:top-1/2 after:left-[220px] after:w-full after:h-[2px] after:bg-sky-500 ">Upcoming Matches</span>
                 </div>
-
+                <div class="card_1 mt-6 border border-gray-700 bg-[#16496A] rounded-xl overflow-hidden">
+                    <div class="top-part px-5 py-4">
+                        <div class="team-box flex justify-between items-center">
+                            <div class="team-1 size-14  rounded-full">
+                                <img class="w-full h-full object-cover block" src="images/flag-england.png">
+                            </div>
+                            <div class="schedule">
+                                <h3 class="flex items-center text-2xl text-white font-roboto ">ENG<small class="text-[12px] mx-2">vs</small>AUS</h3>
+                                <p class="text-white text-md font-inter">Today 7:30 PM</p>
+                            </div>
+                             <div class="team-1 size-14  rounded-full">
+                                <img class="w-full h-full object-cover block" src="images/flag-australia.png">
+                            </div>
+                        </div>
+                        <div class="series-info flex justify-between mt-4">
+                          <p class="text-md text-[#B8C5D6]">1st Ashes Test Match</p>
+                          <p class="text-md text-[#B8C5D6]">Australia tour of England</p>
+                        </div>
+                    </div>
+                    <div class="bottom-part bg-teal-500/60 p-2 flex justify-end ">
+                        <div class="text-sx px-4 py-1 bg-[#103453] rounded-xl flex items-center gap-3 inline-flex border border-[#2175C4] shadow-lg">
+                            <img src="images/bell.png">
+                            <span class="text-white text-md ">Set Reminder</span>
+                            </div>                             
+                    </div>
+                </div>
+                <div class="card_1 mt-6 border border-gray-700 bg-[#16496A] rounded-xl overflow-hidden">
+                    <div class="top-part px-5 py-4">
+                        <div class="team-box flex justify-between items-center">
+                            <div class="team-1 size-14  rounded-full">
+                                <img class="w-full h-full object-cover block" src="images/flag-srilanka.png">
+                            </div>
+                            <div class="schedule text-center">
+                                <h3 class="flex items-center text-2xl text-white font-roboto ">SL<small class="text-[12px] mx-2">vs</small>AGF</h3>
+                                <p class="text-white text-md font-inter">Today 1:30 PM</p>
+                            </div>
+                             <div class="team-1 size-14  rounded-full">
+                                <img class="w-full h-full object-cover block" src="images/flag-afganistan.png">
+                            </div>
+                        </div>
+                        <div class="series-info flex justify-between mt-4">
+                          <p class="text-md text-[#B8C5D6]">1st ODI Match</p>
+                          <p class="text-md text-[#B8C5D6]">Afganistan tour of Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="bottom-part bg-teal-500/60 p-2 flex justify-end ">
+                        <div class="text-sx px-4 py-1 bg-[#103453] rounded-xl flex items-center gap-3 inline-flex border border-[#2175C4] shadow-lg">
+                            <img src="images/bell.png">
+                            <span class="text-white text-md ">Set Reminder</span>
+                            </div>                             
+                    </div>
+                </div>
+                <div class="more mt-3">
+                <a href="" class="text-white text-lg font-roboto group hover:text-accent">More Matches <i class="fa-solid fa-angle-right text-white transition-all duration-300 ease group-hover:translate-x-1 group-hover:text-accent"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -264,4 +318,4 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
 
 </body>
 
-</html>
+</html> 
