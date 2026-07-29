@@ -103,7 +103,7 @@
         <div class="hero-image  w-full h-160">
             <div class="image w-full block relative group">
                 <img class="w-full" src="images/Hero-Image.jpg">
-                <div class="overlay absolute inset-0 bg-black/30"></div>
+                <div class="overlay-1 absolute inset-0 bg-black/30"></div>
 
                 <!-- scorecard -->
                 <div class="container mx-auto px-3 hidden lg:flex">
@@ -314,62 +314,146 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
     </div>
 
     <!-- top stories -->
-     <div class="container top-story mt-8 mx-auto px-3">
-        <div class="grid grid-cols-12">
-               <div class="story col-span-9 bg-[#134A6B] px-4 rounded-xl">
+     <div class="container top-story mt-14 mx-auto px-3">
+        <div class="grid grid-cols-12 gap-5">
+               <div class="story col-span-9 bg-[#134A6B] px-4 rounded-xl pb-5">
                 
-                <div class="title flex gap-4 items-center py-5 ml-8">
+                <div class="title flex gap-4 items-center py-5">
                     <img class="size-7" src="images/star.png">
                     <h2 class="text-white font-oswald text-2xl">Top Stories</h2>
                 </div>
                 <div class="grid grid-cols-3 gap-4">
-                <div class="card rounded-md  relative shadow-xl">
+                <div class="card rounded-md  relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1">
                     <div class="button-left absolute top-1/2 -translate-y-1/2 left-[-10px] z-20">
             <div class="main size-8 rounded-full  bg-white/30 flex items-center justify-center hover:bg-white group transition-all duration-300 ease"><i class="fa-solid fa-chevron-left text-black/50 group-hover:text-black transition-all duration-300 ease"></i></div>
                  </div>
-                    <div class="image w-full ">
+                    <div class="image w-full  ">
                         <img class="w-full rounded-md block object-cover" src="images/image-1.png">
                     </div>
-                    <div class="overlay absolute bottom-0 left-0 right-0 h-1/2"></div>
-                    <div class="headline absolute left-0 bottom-2 px-2">
-                       <h6 class="text-white text-[13px] font-inter "> India won T20 World Cup so easily by defeat New Zealand.</h6>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                    <div class="headline absolute left-0 bottom-2 px-3">
+                       <h6 class="text-white text-[13px] font-inter mb-1"> India won T20 World Cup so easily by defeat New Zealand.</h6>
                        <p class="text-xs font-inter italic text-[#A0AEC0]">2 Days ago</p>
                     </div>
                 </div>
 
-                <div class="card rounded-md overflow-hidden relative shadow-xl">
+                <div class="card rounded-md overflow-hidden relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1 ">
                     <div class="image w-full">
                         <img class="w-full block object-cover" src="images/image-2.png">
                     </div>
-                    <div class="overlay absolute bottom-0 left-0 right-0 h-1/2"></div>
-                    <div class="headline absolute left-0 bottom-2 px-2">
-                       <h6 class="text-white text-[13px] font-inter ">TATA IPL 2026 is set to begins from 28 March.</h6>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                    <div class="headline absolute left-0 bottom-2 px-3">
+                       <h6 class="text-white text-[13px] font-inter mb-1">TATA IPL 2026 is set to begins from 28 March.</h6>
                        <p class="text-xs font-inter italic text-[#A0AEC0]">17 hours ago</p>
                     </div>
                 </div>
 
-                <div class="card   relative shadow-xl">
+                <div class="card   relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1">
                     <div class="button-right absolute top-1/2 -translate-y-1/2 right-[-10px] z-30">
              <div class="main size-8 rounded-full  bg-white/30 flex items-center justify-center hover:bg-white group transition-all duration-300 ease"><i class="fa-solid fa-chevron-right text-black/50 group-hover:text-black transition-all duration-300 ease"></i></div>
                    </div>
                     <div class="image w-full">
                         <img class="w-full block object-cover rounded-md" src="images/image-3.png">
                     </div>
-                    <div class="overlay absolute bottom-0 left-0 right-0 h-1/2"></div>
-                    <div class="headline absolute left-0 bottom-2 px-2">
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                    <div class="headline absolute left-0 bottom-2 px-3 mb-1">
                        <h6 class="text-white text-[13px] font-inter ">Indian Women beat Australia Women and won the series by 2-1.</h6>
                        <p class="text-xs font-inter italic text-[#A0AEC0]">5 hours ago</p>
                     </div>
-                </div>
-                 
-               </div>
-               <div class="throwback grid-col"></div>            
+                </div>       
+               </div>         
         </div>
+           <div class="throwback col-span-3 border border-[#62E4D3] px-4 rounded-xl bg-[#134A6B]">
+                
+ 
+                <div class="title flex gap-4 items-center justify-center py-5 ">
+                    <img class="size-7" src="images/calendar.png">
+                    <h2 class="text-white font-oswald text-2xl">Throwback</h2>
+                </div>
+
+                <div class="card rounded-lg  relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1 overflow-hidden">
+                    <span class="bg-[#137270] text-white text-xs px-3 py-1 rounded-2xl border border-[#64EEEB] absolute top-3 right-3 shadow-lg font-semibold">06 June - 2006</span>
+                   
+                    <div class="image w-full ">
+                        <img class="w-full rounded-md block object-cover" src="images/image-4.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                    <div class="headline absolute left-0 bottom-2 px-3">
+                       <h6 class="text-white text-[13px] font-inter ">In 2006, South Africa chased down 434 vs Australia in one of the most iconic chases in history of cricket.</h6>
+                    </div>
+                </div>
+               </div>    
         
      </div>
-           
+    </div>       
 
-
+    <!-- News and Update -->
+     <div class="w-full bg-[#134A6B]">
+     <div class="container mx-auto px-3 mt-14   rounded-xl">
+          <div class="title flex gap-4 items-center py-5">
+                    <img class="size-7" src="images/calendar.png">
+                    <h2 class="text-white font-oswald text-2xl">Latest News & Update</h2>
+                </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+               <div class="card-1">
+                <div class="card rounded-lg  relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1 overflow-hidden">
+                    <span class="bg-purple-500 text-white text-xs px-3 py-1 rounded-2xl border border-[#64EEEB] absolute top-3 right-3 shadow-lg font-semibold">IPL</span>
+                   
+                    <div class="image w-full ">
+                        <img class="w-full rounded-md block object-cover" src="images/image-5.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                     <div class="headline absolute left-0 bottom-2 px-3">
+                       <h6 class="text-white text-[13px] font-inter mb-1">Deweld Brevis will miss today’s match due to side strain.</h6>
+                       <p class="text-xs font-inter italic text-[#A0AEC0]">3 days ago</p>
+                    </div>
+                </div>
+               </div>
+               <div class="card-1">
+                <div class="card rounded-lg  relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1 overflow-hidden">
+                    <span class="bg-green-600 text-white text-xs px-3 py-1 rounded-2xl border border-[#64EEEB] absolute top-3 right-3 shadow-lg font-semibold">PSL</span>
+                   
+                    <div class="image w-full ">
+                        <img class="w-full rounded-md block object-cover" src="images/image-6.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                     <div class="headline absolute left-0 bottom-2 px-3">
+                       <h6 class="text-white text-[13px] font-inter mb-1">Fakhar Zaman gets 2 match ban due to ball temparing.</h6>
+                       <p class="text-xs font-inter italic text-[#A0AEC0]">7 days ago</p>
+                    </div>
+                </div>
+               </div>
+                <div class="card-1">
+                <div class="card rounded-lg  relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1 overflow-hidden">
+                    <span class="bg-zinc-800 text-white text-xs px-3 py-1 rounded-2xl border border-[#64EEEB] absolute top-3 right-3 shadow-lg font-semibold">Women</span>
+                   
+                    <div class="image w-full ">
+                        <img class="w-full rounded-md block object-cover" src="images/image-7.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                     <div class="headline absolute left-0 bottom-2 px-3">
+                       <h6 class="text-white text-[13px] font-inter mb-1">Amelia Kerr 179 knock helps NZ to lever series against SA.</h6>
+                       <p class="text-xs font-inter italic text-[#A0AEC0]">3 days ago</p>
+                    </div>
+                </div>
+               </div>
+               <div class="card-1">
+                <div class="card rounded-lg  relative shadow-xl hover:border hover:border-teal-500 hover:shadow-xl transition-all duration-300 ease hover:-translate-y-1 overflow-hidden">
+                    <span class="bg-blue-800 text-white text-xs px-3 py-1 rounded-2xl border border-[#64EEEB] absolute top-3 right-3 shadow-lg font-semibold">ICC</span>
+                   
+                    <div class="image w-full ">
+                        <img class="w-full rounded-md block object-cover" src="images/image-8.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-full"></div>
+                     <div class="headline absolute left-0 bottom-2 px-3">
+                       <h6 class="text-white text-[13px] font-inter mb-1">ICC will do meeting in London for upcoming ODI World Cup.</h6>
+                       <p class="text-xs font-inter italic text-[#A0AEC0]">1 days ago</p>
+                    </div>
+                </div>
+               </div>
+        </div>
+     </div>
+</div>
 
 
 </body>
