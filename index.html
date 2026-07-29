@@ -62,16 +62,16 @@
                     <li><a class="text-primary text-md font-medium font-roboto px-4 py-5 " href="">
                             Live Score
                         </a></li>
-                    <li><a class="text-secondary text-md font-medium font-roboto px-4 py-5" href="">
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
                             Team
                         </a></li>
-                    <li><a class="text-secondary text-md font-medium font-roboto px-4 py-5" href="">
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
                             News
                         </a></li>
-                    <li><a class="text-secondary text-md font-medium font-roboto px-4 py-5" href="">
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
                             Series
                         </a></li>
-                    <li><a class="text-secondary text-md font-medium font-roboto px-4 py-5" href="">
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
                             Gallary
                         </a></li>
                 </ul>
@@ -79,13 +79,13 @@
 
             <!-- icon & button -->
             <div class="icons flex gap-5">
-                <div class="fantasy flex gap-2 items-center hidden lg:flex ">
+                <div class="fantasy flex gap-3 items-center hidden lg:flex ">
                     <i class="fa-solid fa-trophy text-primary"></i>
-                    <span class="text-secondary font-medium font-roboto">Fantasy</span>
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Fantasy</a>
                 </div>
-                <div class="notification flex gap-2 items-center hidden lg:flex">
+                <div class="notification flex gap-3 items-center hidden lg:flex">
                     <i class="fa-solid fa-bell text-primary"></i>
-                    <span class="text-secondary font-medium font-roboto">Notification</span>
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Notification</a>
                 </div>
                 <button
                     class="px-3 py-1 rounded-md bg-gradient-to-b from-[#00BFFF] to-[#28385D] text-sm font-medium font-roboto text-white">Premium</button>
@@ -106,7 +106,7 @@
                 <div class="overlay absolute inset-0 bg-black/30"></div>
 
                 <!-- scorecard -->
-                <div class="container mx-auto px-3">
+                <div class="container mx-auto px-3 hidden lg:flex">
                     <div class="score-card-live group absolute bottom-[20px] left-[20px]">
                         <div
                             class=" bg-red-600 rounded-full inline-flex px-3 py-1 shadow-[0px_px_4px_rgba(255,255,255,0.25)]">
@@ -137,8 +137,8 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
                             </div>
                             <p class="text-secondary text-sm font-inter mb-4">Australia still to bat</p>
                             <button
-                                class="px-4 py-2 text-white bg-[#428BC1] flex gap-3 rounded-lg items-center text-sm font-medium">View
-                                Scroeboard<i class="fa-solid fa-arrow-right"></i></button>
+                                class="px-4 py-2 text-white hover:bg-blue-700 bg-blue-600 flex gap-3 rounded-lg items-center text-sm font-medium hover:shadow-lg transition-all duration-300 ease">View
+                                Scroeboard<i class="hover:translate-x-1 fa-solid fa-arrow-right transition-all duration-300 ease"></i></button>
                         </div>
                     </div>
                 </div>
@@ -147,20 +147,20 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
     </div>
 
     <!-- hot series -->
-     <div class="w-full bg-white/10 py-5 mt-[80px] backdrop-blur-xl border border-teal-500/20">
-        <div class="container mx-auto px-3 flex justify-between items-center">
-            <div class="hot class bg-[#457DA4] inline rounded-lg px-5 py-2">
-                <span class="text-white font-medium font-roboto"> <i class="fa-solid fa-fire"></i>Hot Series</span>
+     <div class="w-full bg-white/10 py-5 mt-[80px] backdrop-blur-xl border border-teal-500/20 overflow-x-auto">
+        <div class="container mx-auto px-3 flex justify-between items-center min-w-[1200px]">
+            <div class="hot class bg-[#457DA4] inline rounded-lg px-5 py-2 flex items-center gap-2">
+                <img src="images/hot.png">
+                <span class="text-white font-medium font-roboto"> Hot Series</span>
             </div>
             <div class="series flex items-center px-5 py-3 bg-[rgba(69_125_164_/_0.50)] rounded-lg shadow-lg">
                 <ul class="flex items-center gap-10">
                     <li><a class="text-white px-3 py-1.5 bg-blue-500 rounded-2xl font-medium block" href="#">IPL 2026</a></li>
-                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">AUS W vs WI W</a></li>
-                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">IND vs ENG</a></li>
-                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">Big Bash Leauge</a></li>
-                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">SA W vs NZ W</a></li>
-                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">BAN vs ZIM</a></li>
-                    <li><a class="text-[#A0B3C5] px-2 py-1  rounded-2xl" href="#">Hundred</a></li>
+                    <li><a class="text-[#A0B3C5] hover:text-white transition-all duration-300 ease px-2 py-1  rounded-2xl" href="#">AUS W vs WI W</a></li>
+                    <li><a class="text-[#A0B3C5] hover:text-white transition-all duration-300 ease px-2 py-1  rounded-2xl" href="#">IND vs ENG</a></li>
+                    <li><a class="text-[#A0B3C5] hover:text-white transition-all duration-300 ease px-2 py-1  rounded-2xl" href="#">SA W vs NZ W</a></li>
+                    <li><a class="text-[#A0B3C5] hover:text-white transition-all duration-300 ease px-2 py-1  rounded-2xl" href="#">BAN vs ZIM</a></li>
+                    <li><a class="text-[#A0B3C5] hover:text-white transition-all duration-300 ease px-2 py-1  rounded-2xl" href="#">Hundred</a></li>
                 </ul>
             </div>
         </div>
@@ -169,8 +169,8 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
      <!-- live matches -->
 
     <div class="container mx-auto px-3 py-5 mt-[80px] rounded-xl overflow-hidden border border-primary/40  shadow-[0px_1px_5px_rgba(72,235,250,0.8)]">
-        <div class="grid grid-cols-2 items-center py-">
-            <div class="live-matches px-5 border-r border-white/30 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-[40px] lg:gap-0">
+            <div class="live-matches px-5 border-0 lg:border-r-2 border-white/30  ">
                 <div class="card bg-[#0F334A]  rounded-xl shadow-[0px_2px_10px_rgba(31,214,192,0.3)] border border-primary/40" >
                 <div class="match-1 p-4 flex justify-between ">
                     <div class="box-1 ">
@@ -312,6 +312,62 @@ after:bg-white/20">1st Test at Adelaide | Day 1</p>
             </div>
         </div>
     </div>
+
+    <!-- top stories -->
+     <div class="container top-story mt-8 mx-auto px-3">
+        <div class="grid grid-cols-12">
+               <div class="story col-span-9 bg-[#134A6B] px-4 rounded-xl">
+                
+                <div class="title flex gap-4 items-center py-5 ml-8">
+                    <img class="size-7" src="images/star.png">
+                    <h2 class="text-white font-oswald text-2xl">Top Stories</h2>
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                <div class="card rounded-md  relative shadow-xl">
+                    <div class="button-left absolute top-1/2 -translate-y-1/2 left-[-10px] z-20">
+            <div class="main size-8 rounded-full  bg-white/30 flex items-center justify-center hover:bg-white group transition-all duration-300 ease"><i class="fa-solid fa-chevron-left text-black/50 group-hover:text-black transition-all duration-300 ease"></i></div>
+                 </div>
+                    <div class="image w-full ">
+                        <img class="w-full rounded-md block object-cover" src="images/image-1.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-1/2"></div>
+                    <div class="headline absolute left-0 bottom-2 px-2">
+                       <h6 class="text-white text-[13px] font-inter "> India won T20 World Cup so easily by defeat New Zealand.</h6>
+                       <p class="text-xs font-inter italic text-[#A0AEC0]">2 Days ago</p>
+                    </div>
+                </div>
+
+                <div class="card rounded-md overflow-hidden relative shadow-xl">
+                    <div class="image w-full">
+                        <img class="w-full block object-cover" src="images/image-2.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-1/2"></div>
+                    <div class="headline absolute left-0 bottom-2 px-2">
+                       <h6 class="text-white text-[13px] font-inter ">TATA IPL 2026 is set to begins from 28 March.</h6>
+                       <p class="text-xs font-inter italic text-[#A0AEC0]">17 hours ago</p>
+                    </div>
+                </div>
+
+                <div class="card   relative shadow-xl">
+                    <div class="button-right absolute top-1/2 -translate-y-1/2 right-[-10px] z-30">
+             <div class="main size-8 rounded-full  bg-white/30 flex items-center justify-center hover:bg-white group transition-all duration-300 ease"><i class="fa-solid fa-chevron-right text-black/50 group-hover:text-black transition-all duration-300 ease"></i></div>
+                   </div>
+                    <div class="image w-full">
+                        <img class="w-full block object-cover rounded-md" src="images/image-3.png">
+                    </div>
+                    <div class="overlay absolute bottom-0 left-0 right-0 h-1/2"></div>
+                    <div class="headline absolute left-0 bottom-2 px-2">
+                       <h6 class="text-white text-[13px] font-inter ">Indian Women beat Australia Women and won the series by 2-1.</h6>
+                       <p class="text-xs font-inter italic text-[#A0AEC0]">5 hours ago</p>
+                    </div>
+                </div>
+                 
+               </div>
+               <div class="throwback grid-col"></div>            
+        </div>
+        
+     </div>
+           
 
 
 
