@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Scores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/3.1.1/iconify-icon.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#64EEEB",
+                        secondary: "#DDE6F2",
+                        para: "#A0AEC0",
+                        bgtag:"#0F0F0F",
+                        tagborder:"1E4A66",
+                        accent: "#38BDF8",
+
+                        gradientStart: "#5B5FEF",
+                        gradientEnd: "#10B981",
+
+                        background: "#F8FAFC",
+                        paragraph: "#64748B",
+
+                        btnPrimary: "#2563EB",
+                        btnHover: "#48EBFA",
+
+                        heading: "#0F172A",
+                        cardBg: "#3D293B"
+                    },
+
+                    fontFamily: {
+                        bebas: ['"Bebas Neue"', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        oswald: ['Oswald', 'sans-serif'],
+                        roboto: ['roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0B1E2D]">
+      <div class="w-full  mx-auto">
+        <div class="header flex items-center bg-[#041E34] justify-between w-full px-3">
+            <div class="logo ">
+                <a href=""><img class="w-30 h-30" src="images/Logo.png"></a>
+            </div>
+            <!-- navbar -->
+            <div class="navmenu hidden lg:flex">
+                <ul class="flex gap-5">
+                    <li><a class="text-primary text-md font-medium font-roboto px-4 py-5   border-b-4 border-primary" href="">
+                            Live Score
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5 border-w transition-all duration-300 ease hover:border-b-4 border-primary" href="">
+                            Team
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
+                            News
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
+                            Series
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
+                            Gallary
+                        </a></li>
+                </ul>
+            </div>
+
+            <!-- icon & button -->
+            <div class="icons flex gap-5">
+                <div class="fantasy flex gap-3 items-center hidden lg:flex ">
+                    <img class="size-6 " src="images/trophy.png">
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Fantasy</a>
+                </div>
+                <div class="notification flex gap-3 items-center hidden lg:flex">
+                    <img src="images/bell.png">
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Notification</a>
+                </div>
+                <button
+                    class="px-3 py-1 rounded-md bg-gradient-to-b from-[#00BFFF] to-[#28385D] text-sm font-medium font-roboto text-white">Premium</button>
+                <!-- toggle-mobile -->
+                <div class="toggle flex items-center flex lg:hidden">
+                    <i class="fa-solid fa-bars text-primary text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- navigation -->
+
+ <div class="w-full bg-[#194763] py-10">
+    <div class="container mx-auto px-3 flex justify-between items-center ">
+        <div class="heading">
+                <h2 class="text-white font-medium text-3xl font-oswald mb-2">Live Matches</h2>
+                <p class="text-para text-lg font-inter">Real-time scores & match updates</p>
+        </div>
+        <div class="live-heading">
+            <p class="text-white text-lg font-inter font-medium flex items-center"><i class="fa-solid fa-circle text-[10px] text-red-600 shadow-[0px_1px_15px_rgba(255,0,0,0.8) mr-3"></i>3 live matches <i class="fa-solid fa-arrow-rotate-left bg-[#153653] p-4 py-2 text-[#0D99FF] flex items-center justify-center rounded-md ml-3"></i></p>
+        </div>
+
+    </div>
+ </div>
+
+
+ <!-- match selection tag -->
+  <div class="container mt-[80px] mx-auto px-3">
+    <div class="current-match flex gap-5">
+        <span  class="bg-primary px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)]">All</span>
+        <span  class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-lg">Live</span>
+        <span  class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-lg">Upcoming</span>
+        <span  class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-lg">Recent</span>
+
+
+        
+
+    </div>
+  </div>
+    
+</body>
+</html>
