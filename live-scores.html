@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +23,8 @@
                         primary: "#64EEEB",
                         secondary: "#DDE6F2",
                         para: "#A0AEC0",
-                        bgtag:"#0F0F0F",
-                        tagborder:"1E4A66",
+                        bgtag: "#0F0F0F",
+                        tagborder: "1E4A66",
                         accent: "#38BDF8",
 
                         gradientStart: "#5B5FEF",
@@ -50,8 +51,9 @@
         }
     </script>
 </head>
+
 <body class="bg-[#0B1E2D]">
-      <div class="w-full  mx-auto">
+    <div class="w-full  mx-auto">
         <div class="header flex items-center bg-[#041E34] justify-between w-full px-3">
             <div class="logo ">
                 <a href=""><img class="w-30 h-30" src="images/Logo.png"></a>
@@ -59,10 +61,12 @@
             <!-- navbar -->
             <div class="navmenu hidden lg:flex">
                 <ul class="flex gap-5">
-                    <li><a class="text-primary text-md font-medium font-roboto px-4 py-5   border-b-4 border-primary" href="">
+                    <li><a class="text-primary text-md font-medium font-roboto px-4 py-5   border-b-4 border-primary"
+                            href="">
                             Live Score
                         </a></li>
-                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5 border-w transition-all duration-300 ease hover:border-b-4 border-primary" href="">
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5 border-w transition-all duration-300 ease hover:border-b-4 border-primary"
+                            href="">
                             Team
                         </a></li>
                     <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
@@ -97,35 +101,141 @@
         </div>
     </div>
 
- <!-- navigation -->
+    <!-- navigation -->
 
- <div class="w-full bg-[#194763] py-10">
-    <div class="container mx-auto px-3 flex justify-between items-center ">
-        <div class="heading">
+    <div class="w-full bg-[#194763] py-10">
+        <div class="container mx-auto px-3 flex justify-between items-center ">
+            <div class="heading">
                 <h2 class="text-white font-medium text-3xl font-oswald mb-2">Live Matches</h2>
                 <p class="text-para text-lg font-inter">Real-time scores & match updates</p>
+            </div>
+            <div class="live-heading">
+                <p class="text-white text-lg font-inter font-medium flex items-center"><i
+                        class="fa-solid fa-circle text-[10px] text-red-600 shadow-[0px_1px_15px_rgba(255,0,0,0.8) mr-3"></i>3
+                    live matches <i
+                        class="fa-solid fa-arrow-rotate-right text-sm bg-[#153653] p-4 py-2 text-[#0D99FF] flex items-center justify-center rounded-lg ml-3"></i>
+                </p>
+            </div>
+
         </div>
-        <div class="live-heading">
-            <p class="text-white text-lg font-inter font-medium flex items-center"><i class="fa-solid fa-circle text-[10px] text-red-600 shadow-[0px_1px_15px_rgba(255,0,0,0.8) mr-3"></i>3 live matches <i class="fa-solid fa-arrow-rotate-left bg-[#153653] p-4 py-2 text-[#0D99FF] flex items-center justify-center rounded-md ml-3"></i></p>
+    </div>
+
+
+    <!-- match selection tag -->
+    <div class="container mt-[80px] mx-auto px-3">
+        <div class="current-match flex gap-5 pb-6 border-b border-primary/20">
+            <span
+                class="bg-primary px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-sm">All</span>
+            <span
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md">Live</span>
+            <span
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-sm">Upcoming</span>
+            <span
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-sm">Recent</span>
         </div>
-
+        <div class="current-match flex gap-5 py-6">
+            <span
+                class="bg-primary px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-sm">All</span>
+            <span
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md">International</span>
+            <span
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-sm">Women</span>
+            <span
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-sm">Association</span>
+            <span
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-sm">Domestic</span>
+        </div>
     </div>
- </div>
 
+    <!-- scorecard -->
+    <div class="container mx-auto px-3">
+        <div class="score rounded-xl overflow-hidden">
+            <div class="title px-4 py-2 bg-[#084467] flex justify-between items-center">
+                <h2 class="text-xl text-white font-roboto">Australia Tour of India 2026</h2>
+                <i class="fa-solid fa-chevron-right text-2xl text-primary/30 hover:text-primary"></i>
+            </div>
+            <!-- scorecard -->
+            <div class="scorecard p-4 bg-[#133143]">
+                <div class="grid grid-cols-4 items-center gap-5">
+                    <div class="box1 team-card ">
+                        <p class="text-sm text-para">1st T20 | Bangluru, Chinnaswamy Stadium </p>
+                        <div class="flag-name my-3 flex gap-8">
+                            <div class="left flex gap-3 items-center">
+                                <img src="images/flag-india-2.png ">
+                                <h3 class="text-white font-inter font-medium text-xl">IND</h3>
+                            </div>
+                            <div class="right flex gap-3 items-center">
+                                <h3 class="text-white font-inter  text-2xl">189/7</h3>
+                                <p class=" font-inter font-medium text-para">(20)</p>
+                            </div>
+                        </div>
+                        <div class="flag-name my-3 flex gap-8">
+                            <div class="left flex gap-3 items-center">
+                                <img src="images/flag-australia-2.png ">
+                                <h3 class="text-white font-inter font-medium text-xl">AUS</h3>
+                            </div>
+                            <div class="right flex gap-3 items-center">
+                                <h3 class="text-white font-inter text-2xl">82/2</h3>
+                                <p class=" font-inter font-medium text-para">(12.2)</p>
+                            </div>
+                        </div>
+                        <p class="text-para text-sm">Aus needs 108 runs in 46 balls to win</p>
+                    </div>
+                    <div class="player-card ">
+                        <div class="flag-name my-3 flex gap-8 justify-between items-center">
+                            <div class="left flex gap-3 items-center">
+                                <div class="image">
+                                    <img src="images/marsh.png ">
+                                </div>
+                                <h3 class="text-white font-inter text-lg">Mitchell Marsh *</h3>
+                            </div>
+                            <div class="right flex gap-3 items-center">
+                                <h3 class="text-white font-inter  text-2xl">43</h3>
+                                <p class=" font-inter font-medium text-para">(33)</p>
+                            </div>
+                        </div>
+                        <div class="flag-name my-3 flex gap-8 justify-between">
+                            <div class="left flex gap-3 items-center ">
+                                <div class="image">
+                                    <img src="images/head.png ">
+                                </div>
+                                <h3 class="text-white font-inter text-lg">Travis Head</h3>
+                            </div>
+                            <div class="right flex gap-3 items-center">
+                                <h3 class="text-white font-inter  text-2xl">37</h3>
+                                <p class=" font-inter font-medium text-para">(41)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="run-rate ">
+                        <div class="flag-name my-3 flex gap-8 justify-between items-center">
+                            <div class="left flex gap-3 items-center">
 
- <!-- match selection tag -->
-  <div class="container mt-[80px] mx-auto px-3">
-    <div class="current-match flex gap-5">
-        <span  class="bg-primary px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)]">All</span>
-        <span  class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-lg">Live</span>
-        <span  class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-lg">Upcoming</span>
-        <span  class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-lg">Recent</span>
+                                <h3 class="text-para font-inter text-lg">Current R.R.</h3>
+                            </div>
+                            <div class="right flex gap-3 items-center">
 
+                                <p class=" font-inter font-medium text-para">6.23</p>
+                            </div>
+                        </div>
+                        <div class="flag-name my-3 flex gap-8 justify-between">
+                            <div class="left flex gap-3 items-center ">
 
-        
+                                <h3 class="text-para font-inter text-lg">Required R.R.</h3>
+                            </div>
+                            <div class="right flex gap-3 items-center">
+                                <p class=" font-inter font-medium text-para">12.42</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+
+            </div>
+
+        </div>
     </div>
-  </div>
-    
+
 </body>
+
 </html>
