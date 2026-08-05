@@ -45,6 +45,7 @@
     left: 50%;
     bottom: 10px;
     transform: translateX(-50%);
+    display: block !important;
 }
 
 .owl-theme .owl-dots .owl-dot {
