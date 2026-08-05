@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="slider/owl.carousel.min.css" />
+    <link rel="stylesheet" href="slider/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/3.1.1/iconify-icon.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#64EEEB",
+                        secondary: "#DDE6F2",
+                        para: "#A0AEC0",
+                        bgtag: "#0F0F0F",
+                        tagborder: "1E4A66",
+                        accent: "#38BDF8",
+
+                        gradientStart: "#5B5FEF",
+                        gradientEnd: "#10B981",
+
+                        background: "#F8FAFC",
+                        paragraph: "#64748B",
+
+                        btnPrimary: "#2563EB",
+                        btnHover: "#48EBFA",
+
+                        heading: "#0F172A",
+                        cardBg: "#3D293B"
+                    },
+
+                    fontFamily: {
+                        bebas: ['"Bebas Neue"', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        oswald: ['Oswald', 'sans-serif'],
+                        roboto: ['roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="slider/owl.carousel.min.js"></script>
+</head>
+
+<body class="bg-[#0B1E2D]">
+
+    <!-- header -->
+    <div class="w-full  mx-auto">
+        <div class="header flex items-center bg-[#003052] justify-between w-full px-3">
+            <div class="logo ">
+                <a href="index.html"><img class="w-30 h-30" src="images/Logo.png"></a>
+            </div>
+            <!-- navbar -->
+            <div class="navmenu hidden lg:flex">
+                <ul class="flex gap-5">
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5   "
+                            href="live-scores.html">
+                            Live Score
+                        </a></li>
+                    <li><a class=" border-b-4 border-primary text-primary text-md font-medium font-roboto px-4 py-5  transition-all duration-300 ease hover:border-b-4 border-primary"
+                            href="teams.html">
+                            Team
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
+                            News
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
+                            Series
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
+                            Gallary
+                        </a></li>
+                </ul>
+            </div>
+
+            <!-- icon & button -->
+            <div class="icons flex gap-5">
+                <div class="fantasy flex gap-3 items-center hidden lg:flex ">
+                    <img class="size-6 " src="images/trophy.png">
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Fantasy</a>
+                </div>
+                <div class="notification flex gap-3 items-center hidden lg:flex">
+                    <img src="images/bell.png">
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Notification</a>
+                </div>
+                <button
+                    class="px-3 py-1 rounded-md bg-gradient-to-b from-[#00BFFF] to-[#28385D] text-sm font-medium font-roboto text-white">Premium</button>
+                <!-- toggle-mobile -->
+                <div class="toggle flex items-center flex lg:hidden">
+                    <i class="fa-solid fa-bars text-primary text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navigation -->
+
+    <div class="w-full bg-[#194763] py-6 hidden lg:block">
+        <div class="container mx-auto px-3 flex justify-between items-center ">
+            <div class="heading">
+                <h2 class="text-white font-medium text-3xl font-oswald mb-2">Teams</h2>
+                <p class="text-para text-lg font-inter">Explore your favorite team to know more.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- team selection tag -->
+    <div class="container mx-auto px-3 overflow-auto py-3 sm:py-8 mt-3">
+        <div id="match-category" class=" flex gap-5 ">
+            <span data-category="all"
+                class="bg-primary px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-xs sm:text-sm">All</span>
+            <span data-category="international"
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">International</span>
+            <span data-category="women"
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Women</span>
+            <span data-category="association"
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Association</span>
+            <span data-category="domestic"
+                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Domestic</span>
+        </div>
+    </div>
+
+
+
+    <!-- test teams -->
+
+    <div id="teams-card" class="w-full mx-auto px-3 mt-6">
+
+        <div data-category="international"
+            class="teams container mx-auto  rounded-xl overflow-hidden border border-[rgba(66,139,193,0.55)] shadow-[0px_2px_10px_rgba(13,153,255,0.35)] mb-14 ">
+
+            <!-- title -->
+            <div class="container ">
+                <div
+                    class="title px-4 py-1 sm:py-2  flex justify-between items-center bg-[linear-gradient(90deg,rgba(44,93,121,1)_0%,rgba(35,75,101,1)_100%)]">
+                    <h2 class="text-md sm:text-xl text-white font-roboto uppercase">Test Teams</h2>
+                </div>
+            </div>
+
+            <!-- teams -->
+            <div class="container mx-auto  bg-[#133143]">
+                <div class="teams-card">
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8  px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+                        <div
+                            class="card-1 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.8)] shadow-[0px_4px_20px_rgba(0,0,0,0.35)] tracking-[1.5px]">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/aus.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">Australia</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/ind.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">India</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/sa.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">South Africa</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/afg.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">AFGHANISTAN</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/irl.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">IRELAND</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/sl.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">Sri lanka</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/ban.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">BANGLADESH</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/nz.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">NEW ZEALAND</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/wi.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">WEST INDIES</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/eng.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">ENGLAND</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/pak.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">PAKISTAN</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-12 sm:size-[60px] lg:size-[68px]" src="images/zim.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">ZIMBABWE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-category="association"
+            class="teams container mx-auto  rounded-xl overflow-hidden border border-[rgba(66,139,193,0.55)] shadow-[0px_2px_10px_rgba(13,153,255,0.35)] ">
+
+            <!-- title -->
+            <div class="container ">
+                <div
+                    class="title px-4 py-1 sm:py-2  flex justify-between items-center bg-[linear-gradient(90deg,rgba(44,93,121,1)_0%,rgba(35,75,101,1)_100%)]">
+                    <h2 class="text-md sm:text-xl text-white font-roboto uppercase">Associates Teams</h2>
+                </div>
+            </div>
+
+            <!-- teams -->
+            <div class="container mx-auto  bg-[#133143]">
+                <div class="teams-card">
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8  px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/mal.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">MALAYSIA</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/hk.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">HONG KONG</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/bel.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">BELGIUM</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/usa.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">usa</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/ned.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">NETHERLANDS</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/nep.png " alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">NEPAL</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/nam.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">NAMIBIA</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/sco.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">SCOTLAND</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/can.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">CANADA</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/oma.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">OMAN</p>
+                            </div>
+                        </div>
+                        <div
+                            class="card-2 h-[90px] sm:h-[100px] lg:h-[120px] w-full bg-[linear-gradient(180deg,rgba(16,42,58,1)_0%,rgba(12,36,51,1)_100%)] rounded-lg border border-[rgba(110,193,228,0.35)] shadow-[0px_2px_4px_rgba(0,0,0,0.25)] tracking-[1.5px] transition-all duration-300 ease hover:bg-[linear-gradient(270deg,rgba(27,67,92,1)_0%,rgba(53,98,126,1)_100%)] hover:shadow-2xl">
+                            <div class="content flex gap-3 sm:gap-5 items-center h-full px-5">
+                                <img class="size-10 sm:size-[52px] lg:size-[60px]" src="images/ken.png" alt="">
+                                <p class="text-white text-xs sm:text-[16px] font-inter uppercase">KENYA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="w-full bg-[#071A2B] mt-[40px] lg:mt-[80px]">
+        <div class="container mx-auto px-3 py-5">
+            <div class="footer-info">
+                <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 items-center">
+                    <div class="part-1 px-4 mb-5 lg:mb-0">
+                        <img src="images/Logo.png">
+                        <p class="text-[#A0AEC0]">Your daily source for cricket news, scores, and updates.</p>
+                        <div class="icons mt-5 flex gap-4">
+                            <i class="fa-brands fa-facebook text-2xl text-white hover:text-primary"></i>
+                            <i class="fa-brands fa-twitter text-2xl text-white hover:text-primary"></i>
+                            <i class="fa-brands fa-youtube text-2xl text-white hover:text-primary"></i>
+                            <i class="fa-brands fa-instagram text-2xl text-white hover:text-primary"></i>
+                        </div>
+                    </div>
+
+                    <div class="part-2 px-4 mb-5 lg:mb-0">
+                        <h5 class="text-white font-roboto">Quick Links</h5>
+                        <ul>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Live Scores</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">News</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Series</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Teams</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Gallery</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="part-3 px-4 mb-5 lg:mb-0">
+                        <h5 class="text-white font-roboto">Tournaments</h5>
+                        <ul>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">IPL 2026</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">SAW vs NZW</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Ashes</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">T20 World Cup 2026</a>
+                            </li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">HUNDRED</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="part-4 px-4 mb-5 lg:mb-0">
+                        <h5 class="text-white font-roboto">Top Players</h5>
+                        <ul>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Virat Kohli</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Joe Root</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Abhishak Sharma</a>
+                            </li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Steve Smith</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Rohit Sharma</a></li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Scores</title>
+    <link rel="stylesheet" href="slider/owl.carousel.min.css" />
+    <link rel="stylesheet" href="slider/owl.theme.default.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <script src="https://code.iconify.design/iconify-icon/3.1.1/iconify-icon.min.js"></script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -50,6 +53,12 @@
             }
         }
     </script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+     <script src="slider/owl.carousel.min.js"></script>
 </head>
 
 <body class="bg-[#0B1E2D]">
@@ -66,7 +75,7 @@
                             Live Score
                         </a></li>
                     <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5 border-w transition-all duration-300 ease hover:border-b-4 border-primary"
-                            href="">
+                            href="teams.html">
                             Team
                         </a></li>
                     <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
@@ -122,35 +131,33 @@
 
 
     <!-- match selection tag -->
-    <div class="container mt-[40px] lg:mt-[80px] mx-auto px-3 overflow-auto pb-3 sm:pb-5 border-b border-primary/20">
-        <div class="current-match flex gap-5  ">
-            <span
-                class="bg-primary  px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-xs sm:text-sm">All</span>
-            <span
-                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Live</span>
-            <span
-                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Upcoming</span>
-            <span
-                class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Recent</span>
+    <div class="container mt-[40px] lg:mt-[40px] mx-auto px-3 overflow-auto pb-3 sm:pb-5 border-b border-primary/20">
+        <div id="match-status" class="current-match flex gap-5  ">
+            <span data-status="all" class=" bg-primary  px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-xs sm:text-sm">All</span>
+            <span data-status="live" class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Live</span>
+            <span data-status="upcoming" class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Upcoming</span>
+            <span data-status="recent" class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Recent</span>
         </div>
         </div>
         <div class="container mx-auto px-3 overflow-auto py-3 sm:py-5">
-        <div class="current-match flex gap-5 ">
-            <span
+        <div id="match-category" class=" flex gap-5 ">
+            <span data-category="all"
                 class="bg-primary px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-xs sm:text-sm">All</span>
-            <span
+            <span data-category="international"
                 class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">International</span>
-            <span
+            <span data-category="women"
                 class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Women</span>
-            <span
+            <span data-category="association"
                 class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Association</span>
-            <span
+            <span data-category="domestic"
                 class="bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Domestic</span>
         </div>
     </div>
 
     <!-- scorecard -->
-     <div class="w-full bg-[#084467]">
+
+    <div  class="w-full scoreboard" data-category="international" data-status="live" >
+     <div class=" w-full bg-[#084467]">
     <div class="container mx-auto px-4">
         <div class="score ">
             <div class="title py-1 sm:py-2  flex justify-between items-center">
@@ -162,9 +169,9 @@
     </div>
             <!-- scorecard -->
               <div class="w-full bg-[#133143]">
-            <div class="scorecard container mx-auto p-4 ">
+            <div class=" container mx-auto p-4 ">
                 <div class="grid  sm:grid-cols-2 xl:grid-cols-4 items-center gap-5">
-                    <div class="box1 team-card ">
+                    <div class="box1 team-card mb-0 lg:mb-4 ">
                         <p class="text-sm text-para">1st T20 | Bangluru, Chinnaswamy Stadium </p>
                         <div class="flag-name my-3 flex gap-8">
                             <div class="left flex gap-3 items-center">
@@ -255,12 +262,13 @@
                 </div>
               </div>
             </div>
-            
+       </div>     
 
 
 <!-- part-2 -->
 
-  <div class="w-full bg-[#084467] mt-12">
+<div class="w-full mt-12 scoreboard" data-category="domestic" data-status="live" >
+  <div class="w-full bg-[#084467] ">
     <div class="container mx-auto px-4">
         <div class="score ">
             <div class="title py-1 sm:py-2  flex justify-between items-center">
@@ -272,9 +280,9 @@
     </div>
 
     <div class="w-full bg-[#133143]">
-            <div class="scorecard container mx-auto p-4 ">
+            <div class=" container mx-auto p-4 ">
                 <div class="grid  sm:grid-cols-2 xl:grid-cols-4 items-center gap-5">
-                    <div class="box1 team-card ">
+                    <div class="box1 team-card mb-0 lg:mb-4 ">
                         <p class="text-sm text-para">26th match | Mumbai, Braborn Stadium </p>
                         <div class="flag-name my-3 flex gap-8">
                             <div class="left flex gap-3 items-center">
@@ -366,9 +374,9 @@
               </div>
               <div class="container mx-auto px-8 divider w-full  border-t border-primary/20 my-5"></div>
               <!-- 2nd match -->
-               <div class="scorecard container mx-auto p-4 ">
+               <div class=" container mx-auto p-4 ">
                 <div class="grid  sm:grid-cols-2 xl:grid-cols-4 items-center gap-5">
-                    <div class="box1 team-card ">
+                    <div class="box1 team-card mb-0 lg:mb-4">
                         <p class="text-sm text-para">27th match | Mumbai, Braborn Stadium </p>
                         <div class="flag-name my-3 flex gap-8">
                             <div class="left flex gap-3 items-center">
@@ -459,7 +467,7 @@
                 </div>
               </div>
             </div>
-
+</div>
 
             <!-- footer -->
 
@@ -544,7 +552,7 @@
     </div>
 
  
-        
+     <script src="script.js"></script>   
 
 </body>
 
