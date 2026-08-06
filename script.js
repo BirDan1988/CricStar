@@ -171,10 +171,17 @@ function filterMatch(){
 
 }
 
+$('#match-category span').click(function(){
+
+    selectedCategory = $(this).data('category');
+
+    filterTeams();
+
+});
 
 
 
-function filterMatch(){
+function filterTeams(){
 
     $('.teams').each(function(){
 

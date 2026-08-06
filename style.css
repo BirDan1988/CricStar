@@ -5,7 +5,7 @@
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 1) 0%,      /* Bottom: fully black */
-    rgba(0, 0, 0, 0.7) 40%,   /* 50% opacity at 80% */
+    rgba(0, 0, 0, 0.7) 50%,   /* 50% opacity at 80% */
     rgba(0, 0, 0, 0) 100%      /* Transparent at the top */
   );
 }
