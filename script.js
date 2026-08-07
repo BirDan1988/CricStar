@@ -208,6 +208,22 @@ function filterTeams(){
 
 }
 
+// news-page load button
+
+
+$('#load-btn-news').click(function(){
+ $('.card-9,.card-10').show()
+ $(this).hide()
+
+})
+
+
+
+
+
+
+
+
 
 
 
