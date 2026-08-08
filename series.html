@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-    ,<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link rel="stylesheet" href="slider/owl.carousel.min.css" />
     <link rel="stylesheet" href="slider/owl.theme.default.min.css" />
     <link rel="stylesheet" href="style.css">
@@ -53,13 +55,16 @@
             }
         }
     </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="slider/owl.carousel.min.js"></script>
 </head>
+
 <body class="bg-[#0B1E2D]">
 
-     <!-- header -->
+    <!-- header -->
     <div class="w-full  mx-auto">
         <div class="header flex items-center bg-[#003052] justify-between w-full px-3">
             <div class="logo ">
@@ -76,14 +81,16 @@
                             href="teams.html">
                             Team
                         </a></li>
-                    <li><a class=" text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="news.html">
+                    <li><a class=" text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5"
+                            href="news.html">
                             News
                         </a></li>
-                    <li><a class=" border-b-4 border-primary text-primary  text-md font-medium font-roboto px-4 py-5" href="series.html">
+                    <li><a class=" border-b-4 border-primary text-primary  text-md font-medium font-roboto px-4 py-5"
+                            href="series.html">
                             Series
                         </a></li>
-                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="">
-                            Gallary
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="gallery.html">
+                            Gallery
                         </a></li>
                 </ul>
             </div>
@@ -121,16 +128,20 @@
     </div>
 
 
-     <!-- match selection tag -->
+    <!-- match selection tag -->
     <div class="container mt-[40px] lg:mt-[40px] mx-auto px-3 overflow-auto pb-3 sm:pb-5 border-b border-primary/20">
         <div id="match-status" class="current-match flex gap-5  ">
-            <span data-status="all" class=" bg-primary  px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-xs sm:text-sm">All</span>
-            <span data-status="live" class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Live</span>
-            <span data-status="upcoming" class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Upcoming</span>
-            <span data-status="recent" class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Recent</span>
+            <span data-status="all"
+                class=" bg-primary  px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-xs sm:text-sm">All</span>
+            <span data-status="live"
+                class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Live</span>
+            <span data-status="upcoming"
+                class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Upcoming</span>
+            <span data-status="recent"
+                class=" bg-bgtag border-2 border-[#1E4A66] px-4 py-1 text-para rounded-full flex justify-center items-center font-inter font-medium transition-all duration-300 ease hover:bg-primary hover:text-[#071B2A] hover:shadow-md text-xs sm:text-sm">Recent</span>
         </div>
-        </div>
-        <div class="container mx-auto px-3 overflow-auto py-3 sm:py-5">
+    </div>
+    <div class="container mx-auto px-3 overflow-auto py-3 sm:py-5">
         <div id="match-category" class=" flex gap-5 ">
             <span data-category="all"
                 class="bg-primary px-4 py-1 text-[#071B2A] rounded-full font-inter font-medium shadow-[0px_1px_5px_rgba(0,212,255,0.8)] flex justify-center items-center text-xs sm:text-sm">All</span>
@@ -145,125 +156,889 @@
         </div>
     </div>
 
-<!-- hero-part -->
+    <!-- hero-part -->
 
-<div class="w-full mt-8 hidden md:block">
-    <div class="container mx-auto px-3 h-[400px]">
-       <div class="hero-image-part relative h-full rounded-xl overflow-hidden shadow-[0px_0px_3px_rgba(13,153,255,1)]">
-        <img class="w-full h-full object-cover" src="images/image-series-hero.png">
-        <div class="overlay-2 absolute left-0 right-0 bottom-0 h-full bg-[linear-gradient(90deg,rgba(7,27,42,0.9)_20%,rgba(7,27,42,0.3)_50%,rgba(7,27,42,0.9)_75%)]"></div>
-        <div class="left-content absolute left-5 top-1/2 -translate-y-1/2">
-            <div class="box">
-                <span class="feature-tag text-sm text-white font-inter px-3 py-1 rounded-full bg-blue-800">Featured</span>
-                <h3 class="text-xl font-inter text-white mt-3">India Tour of Australia 2026</h3>
-                <p class="text-para text-sm mt-2">3rd Test • Melbourne Cricket Ground</p>
-                <div class="team-box-main flex gap-6 items-center py-5 border-b border[0.5px] border-primary/50">
-                       <div class="box-1 flex gap-3">
-                        <img src="images/flag-india-2.png">
-                        <h4 class="text-white font-inter text-lg">INDIA</h4>
-                       </div>
-                       <p class="text-lg text-white/80">vs</p>
-                       <div class="box-2 flex gap-3">
-                        <img src="images/flag-australia-2.png">
-                        <h4 class="text-white font-inter text-lg">AUSTRALIA</h4>
-                       </div>
+    <div class="w-full mt-8 hidden md:block">
+        <div class="container mx-auto px-3 h-[400px]">
+            <div
+                class="hero-image-part relative h-full rounded-xl overflow-hidden shadow-[0px_0px_3px_rgba(13,153,255,1)]">
+                <img class="w-full h-full object-cover" src="images/image-series-hero.png">
+                <div
+                    class="overlay-2 absolute left-0 right-0 bottom-0 h-full bg-[linear-gradient(90deg,rgba(7,27,42,0.9)_20%,rgba(7,27,42,0.3)_50%,rgba(7,27,42,0.9)_75%)]">
                 </div>
-                <div class="live-badge-box mt-3">
-                    <div class="live-badge flex gap-3 items-center">
-                        <span class="inline-flex items-center font-medium gap-1 px-2 py-0.5 bg-red-700 rounded-full text-white text-xs font-inter"><i class="fa-solid fa-circle text-[8px] text-white"></i>LIVE</span>
-                        <p class="text-xs text-para font-inter font-medium">3rd Test • Day 2</p>
-                    </div>
-                </div>
-                <p class="text-sm text-para my-3">India lead Series 1-0</p>
-                <a href="" class="text-sm text-[#0B1E2D] font-inter font-medium bg-[#00D4FF] rounded-lg px-3 py-1 mt-3 hover:bg-[#41D7F5] transition-all duration-300 ease group">View Series <i class="fa-solid fa-arrow-right text-xs ml-1 transition-all duration-300 ease group-hover:translate-x-1"></i></a>
-            </div>
-        </div>
-        <div class="right-content absolute right-5 top-1/2 -translate-y-1/2">
-            <div class="content-box-main">
-                <p class="text-white/90 text-sm mb-1">Series Progress</p>
-                <h6 class="text-white font-inter text-xl mb-1">2<sup class="text-para text-xs">/5</sup></h6>
-                <p class="text-white/90 text-sm mb-1">Matches Completed</p>
-                <div class="bar relative rounded-full w-[100px] h-1 bg-primary/20 overflow-hidden mt-3">
-                    <div class="progress-bar absolute left-0 top-0 bottom-0 h-full w-[40px] bg-primary"></div>
-                </div>
-            
-<div class="matches-progress my-5 border-t border-primary/50 pt-4">
-    <div class="box-1 mb-3">
-        <p class="text-[14px] text-white/70">
-            1st Test - Parth
-        </p>
-        <p class="text-[14px] text-green-400 flex gap-10 items-center justify-between">
-            <span>India Won by 8 Wickets</span>
-            <i class="ri-checkbox-circle-line text-green-500"></i>
-        </p>
-    </div>
-    <div class="box-2 mb-3">
-        <p class="text-[14px] text-white/70">
-            2nd Test - Brisbane
-        </p>
-        <p class="text-[14px] text-red-600 flex gap-10 items-center justify-between">
-            <span>Australia Won by 127 runs</span>
-            <i class="ri-checkbox-circle-line text-red-500"></i>
-        </p>
-    </div>
-    <div class="box-3 mb-3">
-        <p class="text-[14px] text-para">
-            3rd Test - Parth
-        </p>
-        <p class="text-[14px] text-[#0D99FF] flex gap-10 items-center justify-between">
-            <span>Day -2   in Progress</span>
-            <i class="ri-timer-2-line"></i>
-        </p>
-    </div>
-</div>
-<a href="" class="text-sm font-inter font-medium text-[#0D99FF] group">View Full Schedule<i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
-            </div>
-        </div>
-
-       </div>
-    </div>
-</div>
-
-
-<!-- series-card -->
- <div class="w-full mt-8 ">
-    <div class="container mx-auto px-3">
-       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="series-card-1 rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
-                <div class="image relative h-[160px] min-[400px]:h-[200px] sm:h-auto">
-                    <img class="w-full  h-full object-cover block" src="images/image-23.png">
-                    <div class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]"></div>
-                    <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
-                    <span class="inline-flex items-center font-medium gap-1 px-2 py-0.5 bg-red-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">LIVE</span>
-                    <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">England Tour of India 2026</h6>
-                    <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
-                       <div class="box-1 flex-column gap-3">
-                        <img class="w-8 md:w-12 lg:w-15 h-6 md:h-8 lg:h-10" src="images/England-flag-large.png">
-                        <h4 class="text-white font-inter text-xs md:text-md mt-2">ENGLAND</h4>
-                       </div>
-                       <p class="text-lg text-white/80">vs</p>
-                       <div class="box-2 flex-column">
-                        <img class="w-8 md:w-12 lg:w-15 h-6 md:h-8 lg:h-10" src="images/India- flag-large.png">
-                        <h4 class="text-white font-inter text-xs md:text-md mt-2">INDIA</h4>
-                       </div>
-                </div>
-                <div class="match-scedule">
-                    <div class="box-main flex gap-8">
-                        <div class="match-dates">
-                            <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i class="ri-calendar-2-line"></i>7 Jun - 23 July</p>
+                <div class="left-content absolute left-5 top-1/2 -translate-y-1/2">
+                    <div class="box">
+                        <span
+                            class="feature-tag text-sm text-white font-inter px-3 py-1 rounded-full bg-blue-800 inline-flex items-center">Featured</span>
+                        <h3 class="text-xl font-inter text-white mt-3">India Tour of Australia 2026</h3>
+                        <p class="text-para text-sm mt-2">3rd Test • Melbourne Cricket Ground</p>
+                        <div
+                            class="team-box-main flex gap-6 items-center py-5 border-b border[0.5px] border-primary/40">
+                            <div class="box-1 flex gap-3">
+                                <img src="images/flag-india-2.png">
+                                <h4 class="text-white font-inter text-lg">INDIA</h4>
+                            </div>
+                            <p class="text-lg text-white/80">vs</p>
+                            <div class="box-2 flex gap-3">
+                                <img src="images/flag-australia-2.png">
+                                <h4 class="text-white font-inter text-lg">AUSTRALIA</h4>
+                            </div>
                         </div>
-                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i class="ri-trophy-line"></i>5 T20</p>
+                        <div class="live-badge-box mt-3">
+                            <div class="live-badge flex gap-3 items-center">
+                                <span
+                                    class="inline-flex items-center font-medium gap-1 px-2 py-0.5 bg-red-700 rounded-full text-white text-xs font-inter"><i
+                                        class="fa-solid fa-circle text-[8px] text-white"></i>LIVE</span>
+                                <p class="text-xs text-para font-inter font-medium">3rd Test • Day 2</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-para my-3">India lead Series 1-0</p>
+                        <a href=""
+                            class="text-sm text-[#0B1E2D] font-inter font-medium bg-[#00D4FF] rounded-lg px-3 py-1 mt-3 hover:bg-[#41D7F5] transition-all duration-300 ease group">View
+                            Series <i
+                                class="fa-solid fa-arrow-right text-xs ml-1 transition-all duration-300 ease group-hover:translate-x-1"></i></a>
                     </div>
+                </div>
+                <div class="right-content absolute right-5 top-1/2 -translate-y-1/2">
+                    <div class="content-box-main">
+                        <p class="text-white/90 text-sm mb-1">Series Progress</p>
+                        <h6 class="text-white font-inter text-xl mb-1">2<sup class="text-para text-xs">/5</sup></h6>
+                        <p class="text-white/90 text-sm mb-1">Matches Completed</p>
+                        <div class="bar relative rounded-full w-[100px] h-1 bg-primary/20 overflow-hidden mt-3">
+                            <div class="progress-bar absolute left-0 top-0 bottom-0 h-full w-[40px] bg-primary"></div>
+                        </div>
 
+                        <div class="matches-progress my-5 border-t border-primary/30 pt-4">
+                            <div class="box-1 mb-3">
+                                <p class="text-[14px] text-white/70">
+                                    1st Test - Parth
+                                </p>
+                                <p class="text-[14px] text-green-400 flex gap-10 items-center justify-between">
+                                    <span>India Won by 8 Wickets</span>
+                                    <i class="ri-checkbox-circle-line text-green-500"></i>
+                                </p>
+                            </div>
+                            <div class="box-2 mb-3">
+                                <p class="text-[14px] text-white/70">
+                                    2nd Test - Brisbane
+                                </p>
+                                <p class="text-[14px] text-red-600 flex gap-10 items-center justify-between">
+                                    <span>Australia Won by 127 runs</span>
+                                    <i class="ri-checkbox-circle-line text-red-500"></i>
+                                </p>
+                            </div>
+                            <div class="box-3 mb-3">
+                                <p class="text-[14px] text-para">
+                                    3rd Test - Parth
+                                </p>
+                                <p class="text-[14px] text-[#0D99FF] flex gap-10 items-center justify-between">
+                                    <span>Day 2 in Progress</span>
+                                    <i class="ri-timer-2-line"></i>
+                                </p>
+                            </div>
+                        </div>
+                        <a href="" class="text-sm font-inter font-medium text-[#0D99FF] group">View Full Schedule<i
+                                class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                    </div>
                 </div>
 
-                    </div>
-                </div>
-                <a href="" class="text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View Details<i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
             </div>
         </div>
     </div>
- </div>
+
+
+    <!-- series-card -->
+    <div class="w-full mt-8 ">
+        <div class="container mx-auto px-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
+                <div data-aos="fade-right"
+                    class="series-card-1 rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-23.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center font-medium gap-1 px-2 py-0.5 bg-red-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">LIVE</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">England Tour of India 2026
+                            </h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">ENGLAND</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/India- flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">INDIA</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>7 Jun - 23 July</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>5 T20</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="series-card-1 rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-24.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center font-medium gap-1 px-2 py-0.5 bg-red-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">LIVE</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">TATA IPL 2026</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 opacity-0">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">ENGLAND</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/India- flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">INDIA</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>29 Mar - 31 May</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-map-pin-line"></i>India</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="series-card-1 rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-25.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_60%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center  gap-1 px-2 py-0.5 bg-blue-700 rounded-full text-white text-[8px] md:text-xs uppercase shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">Upcoming</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">ICC Women’s T20
+                                <br> World Cup 2026
+                            </h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9 opacity-0"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white hidden font-inter text-xs md:text-md mt-2">ENGLAND</h4>
+                                </div>
+                                <p class="text-lg text-white/80 opacity-0">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9 opacity-0"
+                                        src="images/India- flag-large.png">
+                                    <h4 class="text-white hidden font-inter text-xs md:text-md mt-2">INDIA</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>7 Jun - 23 July</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>5 T20</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="series-card-1 rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-26.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center font-medium gap-1 px-2 py-0.5 uppercase bg-blue-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">upcoming</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">Australia Tour of Wes
+                                Indies</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/Australia-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">Australia</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/Westindies-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">West Indies</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>26 Jun - 16 July</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>3 ODI & 2 T20</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="series-card-1 rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-27.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center uppercase gap-1 px-2 py-0.5 bg-[#3D5574] rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">Completed</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">South Africa Tour of Sri
+                                Lanka</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/South Africa-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">South Africa</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/Sri lanka-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">Sri Lanka</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>22 Feb - 19 Mar</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>2 Test 3 ODI</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="series-card-1 rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-28.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center uppercase gap-1 px-2 py-0.5 bg-blue-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">upcoming</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">South Africa A Tour of
+                                England</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/South Africa-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">South Africa A</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">England Lions</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>29 May - 16 June</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>2 Test 3 ODI</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="hidden series-card rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-23.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center font-medium gap-1 px-2 py-0.5 bg-red-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">LIVE</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">England Tour of India 2026
+                            </h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">ENGLAND</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/India- flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">INDIA</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>7 Jun - 23 July</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>5 T20</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="hidden series-card rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-24.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center font-medium gap-1 px-2 py-0.5 bg-red-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">LIVE</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">TATA IPL 2026</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 opacity-0">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">ENGLAND</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/India- flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">INDIA</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>29 Mar - 31 May</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-map-pin-line"></i>India</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="hidden series-card rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-25.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_60%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center  gap-1 px-2 py-0.5 bg-blue-700 rounded-full text-white text-[8px] md:text-xs uppercase shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">Upcoming</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">ICC Women’s T20
+                                <br> World Cup 2026
+                            </h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9 opacity-0"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white hidden font-inter text-xs md:text-md mt-2">ENGLAND</h4>
+                                </div>
+                                <p class="text-lg text-white/80 opacity-0">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9 opacity-0"
+                                        src="images/India- flag-large.png">
+                                    <h4 class="text-white hidden font-inter text-xs md:text-md mt-2">INDIA</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>7 Jun - 23 July</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>5 T20</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="hidden series-card rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-26.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center font-medium gap-1 px-2 py-0.5 uppercase bg-blue-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">upcoming</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">Australia Tour of Wes
+                                Indies</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/Australia-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">Australia</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/Westindies-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">West Indies</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>26 Jun - 16 July</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>3 ODI & 2 T20</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="hidden series-card rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-27.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center uppercase gap-1 px-2 py-0.5 bg-[#3D5574] rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">Completed</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">South Africa Tour of Sri
+                                Lanka</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/South Africa-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">South Africa</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/Sri lanka-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">Sri Lanka</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>22 Feb - 19 Mar</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>2 Test 3 ODI</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+                <div data-aos="fade-right"
+                    class="hidden series-card rounded-xl overflow-hidden border border-[#1B4E7A] shadow-[0px_2px_8px_rgba(0,0,0,0.7)] hover:border-primary/50 hover:shadow-[0px_0px_2px_rgba(13,153,255,1)] transition-all duration-300 ease">
+                    <div
+                        class="image relative h-[170px] min-[400px]:h-[170px] min-[700px]:h-[180px] min-[1000px]:h-[200px] md:h-auto">
+                        <img class="w-full  h-full object-cover block" src="images/image-28.png">
+                        <div
+                            class="overlay-3 absolute left-0 bottom-0 right-0 h-full bg-[linear-gradient(270deg,rgba(0,8,20,0.6)_0%,rgba(0,8,20,0.9)_70%)]">
+                        </div>
+                        <div class="card-detail absolute left-4  top-1/2 -translate-y-1/2 ">
+                            <span
+                                class="inline-flex items-center uppercase gap-1 px-2 py-0.5 bg-blue-700 rounded-full text-white text-[8px] md:text-xs font-inter shadow-[0px_0px_5px_rgba(255,255,255,0.5)]">upcoming</span>
+                            <h6 class="text-white font-inter text-lg md:text-xl mt-2 md:mt-3">South Africa A Tour of
+                                England</h6>
+                            <div class="team-box-main flex gap-10 items-center py-3 lg:py-3 ">
+                                <div class="box-1 flex-column gap-3">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/South Africa-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">South Africa A</h4>
+                                </div>
+                                <p class="text-lg text-white/80">vs</p>
+                                <div class="box-2 flex-column">
+                                    <img class="w-8 md:w-12 lg:w-14 h-6 md:h-8 lg:h-9"
+                                        src="images/England-flag-large.png">
+                                    <h4 class="text-white font-inter text-xs md:text-md mt-2">England Lions</h4>
+                                </div>
+                            </div>
+                            <div class="match-scedule">
+                                <div class="box-main flex gap-8">
+                                    <div class="match-dates">
+                                        <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                                class="ri-calendar-2-line"></i>29 May - 16 June</p>
+                                    </div>
+                                    <p class="text-para text-xs sm:text-sm flex gap-2 items-center"><i
+                                            class="ri-trophy-line"></i>2 Test 3 ODI</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href=""
+                        class="hover:text-accent text-white text-xs sm:text-sm font-inter text-center block py-2 sm:py-3 bg-[#0B2033] group ">View
+                        Details<i
+                            class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-all duration-300 ease"></i></a>
+                </div>
+            </div>
+
+            <div class="load-button-section mt-4 md:mt-8 flex justify-center">
+                <button id="load-btn-news"
+                    class="text-xs sm:text-sm text-white px-3 sm:px-4 py-1 bg-[#0E2A3A] border border-primary/50 rounded-full hover:shadow-[0px_0px_15px_rgba(29,161,242,0.5)] transition-all duration-300 ease">Load
+                    More Series</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- upcoming series timeline -->
+    <div class="w-full mt-8">
+
+
+
+        <div class="container mx-auto px-3">
+            <h2 class="text-white text-xl font-inter mb-5 px-5">Upcoming Series</h2>
+
+            <div data-aos="fade-right" class="slider-section relative px-10 ">
+
+                <div class="series-button-left absolute top-1/2 -translate-y-1/2 left-[1px] z-20 ">
+                    <div
+                        class="main size-6 sm:size-7 rounded-full border border-[#1B4E7A] bg-[#081C2C] flex items-center justify-center hover:bg-white group transition-all duration-300 ease">
+                        <i
+                            class="ri-arrow-left-s-line text-white group-hover:text-black transition-all duration-300 ease text-xs sm:text-lg"></i>
+                    </div>
+                </div>
+                <div class="series-slider owl-carousel owl-theme">
+                    <div
+                        class="box border border-[#16496D] bg-[#081C2C] rounded-xl p-3 shadow-[0px_0px_5px_rgba(14,165,255,0.5),0px_10px_24px_rgba(0,0,0,0.35)] hover:border-primary/50 hover:bg-[#0A2841]">
+                        <span class="text-xs text-[#58B6FF]">JUNE 2026</span>
+                        <p class="text-para text-xs">7 June - 23 July</p>
+                        <h6 class="text-white font-inter text-sm mt-1">England vs India</h6>
+                        <p class="text-para text-xs mt-1">3 Test 2 ODI</p>
+                        <div class="team-box-main flex gap-5 items-center pt-2 ">
+                            <div class="box-1 flex-column gap-3">
+                                <img class="" src="images/England-small.png">
+
+                            </div>
+                            <p class="text-lg text-white/80">vs</p>
+                            <div class="box-2 flex-column">
+                                <img class="" src="images/Indiasmall.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box border border-[#16496D] bg-[#081C2C] rounded-xl p-3 shadow-[0px_0px_5px_rgba(14,165,255,0.5),0px_10px_24px_rgba(0,0,0,0.35)] hover:border-primary/50 hover:bg-[#0A2841] relative">
+                        <span class="text-xs text-[#58B6FF]">MARCH 2026</span>
+                        <p class="text-para text-xs mt-2">29 Mar - 31 May</p>
+                        <h6 class="text-white font-inter text-sm mt-2">TATA IPL
+                            <br>2026
+                        </h6>
+                        <p class="text-para text-xs mt-2">IPL 2026</p>
+                        <img class="trophy absolute right-3 bottom-3 w-[60px] h-[74px] object-contain"
+                            src="images/ipl trophy.png">
+
+                    </div>
+                    <div
+                        class="box border border-[#16496D] bg-[#081C2C] rounded-xl p-3 shadow-[0px_0px_5px_rgba(14,165,255,0.5),0px_10px_24px_rgba(0,0,0,0.35)] hover:border-primary/50 hover:bg-[#0A2841] relative">
+                        <span class="text-xs text-[#58B6FF]">JUNE 2026</span>
+                        <p class="text-para text-xs mt-2">12 Jun -05 Jul</p>
+                        <h6 class="text-white font-inter text-sm mt-2">ICC Women’s <br>
+                            T20 World Cup
+
+                        </h6>
+                        <p class="text-para text-xs mt-2">T20 World Cup</p>
+                        <img class="trophy absolute right-3 bottom-3 w-[60px] h-[74px] object-contain"
+                            src="images/ICC trophy.png">
+
+                    </div>
+                    <div
+                        class="box border border-[#16496D] bg-[#081C2C] rounded-xl p-3 shadow-[0px_0px_5px_rgba(14,165,255,0.5),0px_10px_24px_rgba(0,0,0,0.35)] hover:border-primary/50 hover:bg-[#0A2841] ">
+                        <span class="text-xs text-[#58B6FF]">JUNE 2026</span>
+                        <p class="text-para text-xs">26 June - 16 July</p>
+                        <h6 class="text-white font-inter text-sm mt-1">Aus VS WI</h6>
+                        <p class="text-para text-xs mt-1">3 ODI & 2 T20</p>
+                        <div class="team-box-main flex gap-5 items-center pt-2 ">
+                            <div class="box-1 flex-column gap-3">
+                                <img class="" src="images/Australia-small.png">
+
+                            </div>
+                            <p class="text-lg text-white/80">vs</p>
+                            <div class="box-2 flex-column">
+                                <img class="" src="images/wi-small.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box border border-[#16496D] bg-[#081C2C] rounded-xl p-3 shadow-[0px_0px_5px_rgba(14,165,255,0.5),0px_10px_24px_rgba(0,0,0,0.35)] hover:border-primary/50 hover:bg-[#0A2841] ">
+                        <span class="text-xs text-[#58B6FF]">May 2026</span>
+                        <p class="text-para text-xs">29 May - 16 June</p>
+                        <h6 class="text-white font-inter text-sm mt-1">SA A vs ENG A</h6>
+                        <p class="text-para text-xs mt-1">Unofficial Test Series</p>
+                        <div class="team-box-main flex gap-5 items-center pt-2 ">
+                            <div class="box-1 flex-column gap-3">
+                                <img class="" src="images/South Africa-small.png">
+
+                            </div>
+                            <p class="text-lg text-white/80">vs</p>
+                            <div class="box-2 flex-column">
+                                <img class="" src="images/England-small.png">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="box border border-[#16496D] bg-[#081C2C] rounded-xl p-3 shadow-[0px_0px_5px_rgba(14,165,255,0.5),0px_10px_24px_rgba(0,0,0,0.35)] hover:border-primary/50 hover:bg-[#0A2841] ">
+                        <span class="text-xs text-[#58B6FF]">JUNE 2026</span>
+                        <p class="text-para text-xs">26 June - 16 July</p>
+                        <h6 class="text-white font-inter text-sm mt-1">Aus VS WI</h6>
+                        <p class="text-para text-xs mt-1">3 ODI & 2 T20</p>
+                        <div class="team-box-main flex gap-5 items-center pt-2 ">
+                            <div class="box-1 flex-column gap-3">
+                                <img class="" src="images/Australia-small.png">
+
+                            </div>
+                            <p class="text-lg text-white/80">vs</p>
+                            <div class="box-2 flex-column">
+                                <img class="" src="images/wi-small.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="box border border-[#16496D] bg-[#081C2C] rounded-xl p-3 shadow-[0px_0px_5px_rgba(14,165,255,0.5),0px_10px_24px_rgba(0,0,0,0.35)] hover:border-primary/50 hover:bg-[#0A2841] ">
+                        <span class="text-xs text-[#58B6FF]">May 2026</span>
+                        <p class="text-para text-xs">29 May - 16 June</p>
+                        <h6 class="text-white font-inter text-sm mt-1">SA A vs ENG A</h6>
+                        <p class="text-para text-xs mt-1">Unofficial Test Series</p>
+                        <div class="team-box-main flex gap-5 items-center pt-2 ">
+                            <div class="box-1 flex-column gap-3">
+                                <img class="" src="images/South Africa-small.png">
+
+                            </div>
+                            <p class="text-lg text-white/80">vs</p>
+                            <div class="box-2 flex-column">
+                                <img class="" src="images/England-small.png">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="series-button-right absolute top-1/2 -translate-y-1/2 right-[1px] z-30">
+                    <div
+                        class="main size-6 sm:size-7 rounded-full border border-[#1B4E7A] bg-[#081C2C] flex items-center justify-center hover:bg-white group transition-all duration-300 ease">
+                        <i
+                            class="ri-arrow-right-s-line text-white group-hover:text-black transition-all duration-300 ease text-xs sm:text-lg"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="w-full bg-[#071A2B] mt-[40px] lg:mt-[80px]">
+        <div class="container mx-auto px-3 py-5">
+            <div class="footer-info">
+                <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 items-center">
+                    <div class="part-1 px-4 mb-5 lg:mb-0">
+                        <img src="images/Logo.png">
+                        <p class="text-[#A0AEC0]">Your daily source for cricket news, scores, and updates.</p>
+                        <div class="icons mt-5 flex gap-4">
+                            <i class="fa-brands fa-facebook text-2xl text-white hover:text-primary"></i>
+                            <i class="fa-brands fa-twitter text-2xl text-white hover:text-primary"></i>
+                            <i class="fa-brands fa-youtube text-2xl text-white hover:text-primary"></i>
+                            <i class="fa-brands fa-instagram text-2xl text-white hover:text-primary"></i>
+                        </div>
+                    </div>
+
+                    <div class="part-2 px-4 mb-5 lg:mb-0">
+                        <h5 class="text-white font-roboto">Quick Links</h5>
+                        <ul>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Live Scores</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">News</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Series</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Teams</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Gallery</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="part-3 px-4 mb-5 lg:mb-0">
+                        <h5 class="text-white font-roboto">Tournaments</h5>
+                        <ul>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">IPL 2026</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">SAW vs NZW</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Ashes</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">T20 World Cup 2026</a>
+                            </li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">HUNDRED</a></li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="part-4 px-4 mb-5 lg:mb-0">
+                        <h5 class="text-white font-roboto">Top Players</h5>
+                        <ul>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Virat Kohli</a></li>
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Joe Root</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Abhishak Sharma</a>
+                            </li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Steve Smith</a></li>
+
+                            <li class="pt-2"><a href="#"
+                                    class="text-[#B8C5D6] font-inter text-sm hover:text-primary">Rohit Sharma</a></li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 
@@ -271,9 +1046,9 @@
 
 
 
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="script.js"></script>
 </body>
+
 </html>

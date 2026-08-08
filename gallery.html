@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="slider/owl.carousel.min.css" />
+    <link rel="stylesheet" href="slider/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Oswald:wght@200..700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/3.1.1/iconify-icon.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#64EEEB",
+                        secondary: "#DDE6F2",
+                        para: "#A0AEC0",
+                        bgtag: "#0F0F0F",
+                        tagborder: "1E4A66",
+                        accent: "#38BDF8",
+
+                        gradientStart: "#5B5FEF",
+                        gradientEnd: "#10B981",
+
+                        background: "#F8FAFC",
+                        paragraph: "#64748B",
+
+                        btnPrimary: "#2563EB",
+                        btnHover: "#48EBFA",
+
+                        heading: "#0F172A",
+                        cardBg: "#3D293B"
+                    },
+
+                    fontFamily: {
+                        bebas: ['"Bebas Neue"', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                        oswald: ['Oswald', 'sans-serif'],
+                        roboto: ['roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="slider/owl.carousel.min.js"></script>
+</head>
+<body class="bg-[#0B1E2D]">
+        <!-- header -->
+    <div class="w-full  mx-auto">
+        <div class="header flex items-center bg-[#003052] justify-between w-full px-3">
+            <div class="logo ">
+                <a href="index.html"><img class="w-30 h-30" src="images/Logo.png"></a>
+            </div>
+            <!-- navbar -->
+            <div class="navmenu hidden lg:flex">
+                <ul class="flex gap-5">
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5   "
+                            href="live-scores.html">
+                            Live Score
+                        </a></li>
+                    <li><a class=" text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5  transition-all duration-300 ease hover:border-b-4 border-primary"
+                            href="teams.html">
+                            Team
+                        </a></li>
+                    <li><a class=" text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5"
+                            href="news.html">
+                            News
+                        </a></li>
+                    <li><a class=" border-b-4 border-primary text-primary  text-md font-medium font-roboto px-4 py-5"
+                            href="series.html">
+                            Series
+                        </a></li>
+                    <li><a class="text-secondary hover:text-primary text-md font-medium font-roboto px-4 py-5" href="gallery.html">
+                            Gallery
+                        </a></li>
+                </ul>
+            </div>
+
+            <!-- icon & button -->
+            <div class="icons flex gap-5">
+                <div class="fantasy flex gap-3 items-center hidden lg:flex ">
+                    <img class="size-6 " src="images/trophy.png">
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Fantasy</a>
+                </div>
+                <div class="notification flex gap-3 items-center hidden lg:flex">
+                    <img src="images/bell.png">
+                    <a href="" class="text-secondary hover:text-primary font-medium font-roboto">Notification</a>
+                </div>
+                <button
+                    class="px-3 py-1 rounded-md bg-gradient-to-b from-[#00BFFF] to-[#28385D] text-sm font-medium font-roboto text-white">Premium</button>
+                <!-- toggle-mobile -->
+                <div class="toggle flex items-center flex lg:hidden">
+                    <i class="fa-solid fa-bars text-primary text-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navigation -->
+
+    <div class="w-full bg-[#194763] py-6 hidden lg:block">
+        <div class="container mx-auto px-3 flex justify-between items-center ">
+            <div class="heading">
+                <h2 class="text-white font-medium text-3xl font-oswald mb-2">Gallery</h2>
+                <p class="text-para text-lg font-inter">Best Moments, Celebrations  & Unforgettable Memories from the World of Cricket.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- selection tab -->
+     <div class="w-full mt-8 bg-[#051F35] border border-[#0E4A76] shadow-[0px_3px_20px_rgba(0,0,0,0.5)]">
+        <div class="container mx-auto px-3">
+            <div class="selection-box  px-4 py-2">
+                <ul class="flex justify-between items-center overflow-x-auto md:overflow-x-visible">
+                    <li><a class="text-white inline-flex gap-2 items-center font-inter text-sm px-3 py-2 rounded-lg bg-[linear-gradient(0deg,rgba(22,84,145,1)_0%,rgba(32,72,142,1)_100%)]"> <i class="ri-image-fill"></i>All Photos</a></li>
+                    <li><a class="text-white inline-flex gap-2 items-center font-inter text-sm"> <i class="fa-solid fa-baseball-bat-ball"></i>Matches</a></li>
+                    <li><a class="text-white inline-flex gap-2 items-center font-inter text-sm"> <i class="ri-team-fill"></i>Celebrations</a></li>
+                    <li><a class="text-white inline-flex gap-2 items-center font-inter text-sm"> <i class="ri-user-fill"></i>Players</a></li>
+                    <li><a class="text-white inline-flex gap-2 items-center font-inter text-sm"><i class="ri-trophy-fill"></i>Tournaments</a></li>
+                </ul>
+                </ul>
+            </div>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -96,6 +96,44 @@ $(document).ready(function () {
         newsSlider.trigger('next.owl.carousel');
     });
 
+    let seriesSlider = $('.series-slider');
+
+    seriesSlider.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+
+        autoplay: false,
+        autoplayTimeout: 4000,
+        autoplaySpeed: 2000,
+        autoplayHoverPause: true,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            500: {
+                items: 2
+            },
+            768: {
+                items: 3
+            },
+            1024: {
+                items: 5
+            }
+        }
+    });
+
+      $('.series-button-right').click(function () {
+        seriesSlider.trigger('prev.owl.carousel');
+    });
+
+    $('.series-button-left').click(function () {
+        seriesSlider.trigger('next.owl.carousel');
+    });
+
+    
+
     $('#series ul li a').click(function () {
         $(this).addClass('text-white  bg-blue-500 rounded-2xl block')
         $(this).parent().siblings().find('a').removeClass('text-white bg-blue-500')
@@ -212,8 +250,9 @@ function filterTeams(){
 
 
 $('#load-btn-news').click(function(){
- $('.card-9,.card-10').show()
+ $('.card-9,.card-10,.series-card').show()
  $(this).hide()
+  AOS.refresh();
 
 })
 
@@ -231,3 +270,4 @@ $('#load-btn-news').click(function(){
 
 
 
+AOS.init();

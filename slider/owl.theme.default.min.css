@@ -78,12 +78,12 @@
     display: none !important;
 }
 
-/* .news-slider .owl-prev,
-.news-slider .owl-next {
-    width: 40px;
-    height: 40px;
-    background: black !important;
-    color: white !important;
-    border-radius: 50%;
-    font-size: 25px !important;
+/* .series-slider .box .trophy {
+    position: absolute !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    width: 60px !important;
+    height: 74px !important;
+    object-fit: contain !important;
 } */
+
